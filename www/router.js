@@ -3,9 +3,8 @@ define(['hackathon'], function () {
 		routes    :{
 			''      :'login',
 			'login' :'login',
-			'badges':'badges',
-			'news'  :'news',
-			'events':'events'
+			'shopMap'       : 'shopMap'   ,
+			'shopMapList'   : 'shopMapList'
 		},
 		initialize:function () {
 			t("inside initialize [router.js]");
@@ -21,39 +20,26 @@ define(['hackathon'], function () {
 				App.views.loginView.render();
 			});
 		},
-		locations :function () {
-			require(['views/locationsView'], function (LocationsView) {
-				t("inside initialize #locations");
-				if (typeof App.views.locationsView === "undefined")
-					App.views.locationsView = new LocationsView;
-				App.views.locationsView.render();
-			});
-		},
-		badges    :function () {
-			require(['views/badgesView'], function (BadgesView) {
-				t("inside initialize #badges");
-				if (typeof App.views.badgesView === "undefined")
-					App.views.badgesView = new BadgesView;
-				App.views.badgesView.render();
-			});
-		},
-		news      :function () {
-			require(['views/newsView'], function (NewsView) {
-				t("inside initialize #news");
-				if (typeof App.views.newsView === "undefined")
-					App.views.newsView = new NewsView;
-				App.views.newsView.render();
-			});
-		},
-		events    :function () {
-			require(['views/eventsView'], function (EventsView) {
-				t("inside initialize #events");
-				if (typeof App.views.eventsView === "undefined")
-					App.views.eventsView = new EventsView;
-				App.views.eventsView.render();
-			});
-		}
-	});
+        shopMap: function() {
+            require(['views/shopMapView'], function (EventsView) {
+                t("inside shopMap [router.js]");
+                if (typeof App.views.eventsView === "undefined") {
+                    App.views.shopMapView = new ShopMapView;
+                }
+                App.views.shopMapView.render();
+            });
+        },
+        shopMapList: function() {
+            require(['views/shopMapListView'], function (EventsView) {
+                t("inside shopMapList [router.js]");
+                if (typeof App.views.eventsView === "undefined") {
+                    App.views.shopMapListView = new ShopMapListView;
+                }
+                App.views.shopMapListView.render();
+            });
+        }
 
+
+    });
 	return Router;
 });
