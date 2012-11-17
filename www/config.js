@@ -24,10 +24,8 @@ var require = {
         'cordova': {
             deps   : [],
             exports: 'Cordova'
-        },
-        'barcodescanner': {
-            deps   : ['cordova']
         }
+        
     },
     paths: {
         backboneio : 'libs/backbone.io',
@@ -39,7 +37,6 @@ var require = {
         transit    : 'libs/jquery.transit',
         text       : 'libs/text',
         iscroll    : 'libs/iscroll',
-        cordova    : 'libs/cordova-2.1.0-' + (navigator.userAgent.toLowerCase().indexOf("android") > -1 ? 'android' : 'ios'),
-        barcodescanner : 'libs/barcodescanner-' + (navigator.userAgent.toLowerCase().indexOf("android") > -1 ? 'android' : 'ios')
+        cordova    : 'libs/cordova-2.0.0-' + (navigator.userAgent.toLowerCase().indexOf("android") > -1 ? 'android' : 'ios')
     }
 };

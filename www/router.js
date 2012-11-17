@@ -1,41 +1,44 @@
 define(['hackathon'], function () {
+
 	var Router = Hackathon.Router.extend({
-		routes    :{
-			''      :'login',
-			'login' :'login',
-			'shopMap'       : 'shopMap'   ,
-			'shopMapList'   : 'shopMapList'
+		routes: {
+			''               : 'showMap',
+			'login'          : 'login',
+			'showMap'        : 'showMap',
+			'showMapList'    : 'showMapList'
 		},
 		initialize:function () {
 			t("inside initialize [router.js]");
 
 			window.mapsFirstLoad = true;
+
+            
 		},
-		login     :function () {
+		login : function () {
 			require(['views/loginView'], function (LoginView) {
 				t("inside #login");
 				if (typeof App.views.loginView === "undefined") {
-					App.views.loginView = new LoginView;
+					App.views.loginView = new LoginView();
 				}
 				App.views.loginView.render();
 			});
 		},
-        shopMap: function() {
+        showMap: function() {
             t("inside shopMap [router.js]");
-            require(['views/shopMapView'], function (ShopMapView) {
-                if (typeof App.views.shopMapView === "undefined") {
-                    App.views.shopMapView = new ShopMapView;
+            require(['views/showMapView'], function (ShowMapView) {
+                if (typeof App.views.showMapView === "undefined") {
+                    App.views.showMapView = new ShowMapView();
                 }
-                App.views.shopMapView.render();
+                App.views.showMapView.render();
             });
         },
-        shopMapList: function() {
-            t("inside shopMapList [router.js]");
-            require(['views/shopMapListView'], function (ShopMapListView) {
-                if (typeof App.views.shopMapListView === "undefined") {
-                    App.views.shopMapListView = new ShopMapListView;
+        showMapList: function() {
+            t("inside showMapList [router.js]");
+            require(['views/showMawListView'], function (ShowMapListView) {
+                if (typeof App.views.showMapListView === "undefined") {
+                    App.views.showMapListView = new ShowMapListView();
                 }
-                App.views.shopMapListView.render();
+                App.views.showMapListView.render();
             });
         }
 
