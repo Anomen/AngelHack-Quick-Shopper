@@ -13,26 +13,26 @@ function d(debugString) {
 }
 
 App = {
-    ip          : "http://localhost:5000/", 
+    ip          : "http://localhost:5000/",
     //ip          : "http://18.111.33.188:5000",
     router      : null,
     views       : {},
     collections : {}
 };
 
-require(['router', 'views/tabbarView', 'hackathon'], function(Router, TabbarView){
-    App.router = new Router;
+require([
+    'router', 
+    'hackathon'
+], function(Router) {
 
-    // Create the tabbar view
-    var tabbarView = new TabbarView;
-    tabbarView.render();
+    App.router = new Router();
 
     // Starts Backbone app.
     Backbone.history.start();
 
     // Initialize the connection between client and server
-    d("Connecting to socket using ip: " + App.ip);
-    Backbone.io.connect(App.ip);
+    //d("Connecting to socket using ip: " + App.ip);
+    //Backbone.io.connect(App.ip);
 
     // Set the BG depending of the device
     if (navigator.userAgent.toLowerCase().indexOf("android") > -1) // android
