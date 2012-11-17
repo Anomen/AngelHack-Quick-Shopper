@@ -1,4 +1,5 @@
 define(['hackathon'], function() {
+    
     var Router = Hackathon.Router.extend({
         routes: {
             ''              : 'locations' , 
@@ -48,18 +49,18 @@ define(['hackathon'], function() {
             });
         },
         shopMap: function() {
-            require(['views/shopMapView'], function (EventsView) {
-                t("inside shopMap [router.js]");
-                if (typeof App.views.eventsView === "undefined") {
+            t("inside shopMap [router.js]");
+            require(['views/shopMapView'], function (ShopMapView) {
+                if (typeof App.views.shopMapView === "undefined") {
                     App.views.shopMapView = new ShopMapView;
                 }
                 App.views.shopMapView.render();
             });
         },
         shopMapList: function() {
-            require(['views/shopMapListView'], function (EventsView) {
-                t("inside shopMapList [router.js]");
-                if (typeof App.views.eventsView === "undefined") {
+            t("inside shopMapList [router.js]");
+            require(['views/shopMapListView'], function (ShopMapListView) {
+                if (typeof App.views.shopMapListView === "undefined") {
                     App.views.shopMapListView = new ShopMapListView;
                 }
                 App.views.shopMapListView.render();
