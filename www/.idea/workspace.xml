@@ -5,8 +5,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/loginTemplate.tpl" afterPath="$PROJECT_DIR$/templates/loginTemplate.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/shoppingListTemplate.tpl" afterPath="$PROJECT_DIR$/templates/shoppingListTemplate.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/loginView.js" afterPath="$PROJECT_DIR$/views/loginView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/shoppingListView.js" afterPath="$PROJECT_DIR$/views/shoppingListView.js" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -74,7 +72,7 @@
       <file leaf-file-name="shoppingListTemplate.tpl" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/shoppingListTemplate.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="289" selection-end="289" vertical-scroll-proportion="0.25216317">
+            <state line="97" column="14" selection-start="2272" selection-end="2272" vertical-scroll-proportion="0.6007417">
               <folding />
             </state>
           </provider>
@@ -113,7 +111,7 @@
       <file leaf-file-name="loginTemplate.tpl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/loginTemplate.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="4" selection-start="916" selection-end="916" vertical-scroll-proportion="0.0">
+            <state line="28" column="12" selection-start="924" selection-end="924" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -141,9 +139,9 @@
         <option value="$PROJECT_DIR$/collections/shoppingListsCollection.js" />
         <option value="$PROJECT_DIR$/router.js" />
         <option value="$USER_HOME$/Dropbox/AngelHacks Hackathon/html5 audio/index.html" />
-        <option value="$PROJECT_DIR$/templates/shoppingListTemplate.tpl" />
         <option value="$PROJECT_DIR$/views/shoppingListView.js" />
         <option value="$PROJECT_DIR$/views/loginView.js" />
+        <option value="$PROJECT_DIR$/templates/shoppingListTemplate.tpl" />
         <option value="$PROJECT_DIR$/templates/loginTemplate.tpl" />
       </list>
     </option>
@@ -477,14 +475,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/loginTemplate.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="4" selection-start="916" selection-end="916" vertical-scroll-proportion="0.0">
+        <state line="28" column="12" selection-start="924" selection-end="924" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/shoppingListTemplate.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="289" selection-end="289" vertical-scroll-proportion="0.25216317">
+        <state line="97" column="14" selection-start="2272" selection-end="2272" vertical-scroll-proportion="0.6007417">
           <folding />
         </state>
       </provider>

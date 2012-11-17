@@ -81,11 +81,10 @@
             border: 2px solid #555;
             padding: 10px 20px;
             border-radius: 10px;
-            background: rgba(255, 255, 255, 0.05);
+            background: white;
             box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3), 0 2px 5px rgba(0, 0, 0, 0.2);
-            color: #fff;
+            color: black;
             font-smoothing: subpixel-antialiased;
-            text-shadow: 1px 1px #333;
         }
 
         .user-speech blockquote {
