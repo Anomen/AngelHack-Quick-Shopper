@@ -11,10 +11,14 @@ define(['text!templates/shoppingListTemplate.tpl', 'collections/shoppingListsCol
 
 		initialize:function () {
 			t("inside initialize [shoppingListView.js]");
+
+
 		},
 
 		render:function () {
 			t("inside render [shoppingListView.js]");
+
+			$('h1').text("Shopping List");
 
 			this.$el.html(this.template());
 		}
