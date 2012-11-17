@@ -1,0 +1,102 @@
+@import "compass/css3";
+@import "compass/css3/images";
+@import "general";
+
+/********************************************************* 
+* Parameters
+********************************************************/
+// Schneider colors
+$spruceGreen: #009530;
+$ladyFernGreen: #4fa600;
+$seedingGreen: #87d300;
+$darkGray: #626469;
+$lightGray: #9fa0a4;
+$sunflowerYellow: #ffd100;
+$honeysuckleOrange: #e47f00;
+$fuchsiaRed: #b10043;
+$skyBlue: #42b4e6;
+
+// Default Corner Radius
+$default-border-radius: 12px;
+
+// Body options
+$pageMenuContentMargin: 20px;
+
+// Menu options
+$pageMenuWidth: 250px;
+$pageMenuMargin: $pageMenuContentMargin + 20px;
+
+#page-menu {
+    @extend .layout-vertical;
+    @extend .box-shadow;
+    @include border-top-left-radius;
+    @include border-bottom-left-radius;
+    position: absolute;
+    top: $pageMenuMargin;
+    bottom: $pageMenuMargin+50px;
+    left: $pageMenuContentMargin;
+    width: $pageMenuWidth;
+    background: #393939;
+    overflow: hidden;
+    .label {
+        color: #FFF;
+    }
+    ul li {
+        @extend .layout-horizontal;
+        @include box-align(center);
+        @include background-image(linear-gradient(#4b4b4b, #393939));
+        min-height: 37px;
+        padding: 5px 10px;
+    }
+
+    .topbar {
+        @extend .layout-horizontal;
+        @include box-align(center);
+        @include box-pack(center);
+        padding: 10px;
+    }
+}
+
+#page-menu-content {
+    @extend .box-shadow;
+    @include border-radius;
+    position: absolute;
+    top: $pageMenuContentMargin;
+    bottom: $pageMenuContentMargin+50px;
+    left: $pageMenuWidth + $pageMenuContentMargin;
+    right: $pageMenuContentMargin;
+    background-color: #eee;
+    color: $spruceGreen;
+    ul.list2 {
+        @include border-radius;
+        li:first-child {
+            @include border-top-radius(0);
+        }
+        li:last-child {
+            @include border-bottom-radius(0);
+        }
+    }
+
+    .topbar {
+        @extend .layout-horizontal;
+        @include box-align(center);
+        @include box-pack(center);
+        @include border-top-radius;
+        color: #999;
+        padding: 10px;
+        background: #DDD;
+    }
+}
+
+#popup-bg .box {
+    color: #333;
+}
+
+.nbVars {
+    font-size: 80%; 
+    color: #AAA;
+}
+
+.selected .nbVars {
+    color: #000;
+}
