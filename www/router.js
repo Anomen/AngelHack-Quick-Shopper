@@ -1,28 +1,30 @@
 define(['hackathon'], function () {
 
 	var Router = Hackathon.Router.extend({
+
 		routes: {
 			''               : 'showMap',
 			'login'          : 'login',
+			'shoppingList'	 :'showShoppingList',
 			'showMap'        : 'showMap',
 			'showMapList'    : 'showMapList'
 		},
-		initialize:function () {
+		initialize: function () {
 			t("inside initialize [router.js]");
-
-			window.mapsFirstLoad = true;
-
-            
 		},
-		login : function () {
+		login: function () {
 			require(['views/loginView'], function (LoginView) {
 				t("inside #login");
+
 				if (typeof App.views.loginView === "undefined") {
 					App.views.loginView = new LoginView();
 				}
+
+				App.router.navigate('#login');
 				App.views.loginView.render();
 			});
 		},
+
         showMap: function() {
             t("inside shopMap [router.js]");
             require(['views/showMapView'], function (ShowMapView) {
@@ -40,9 +42,19 @@ define(['hackathon'], function () {
                 }
                 App.views.showMapListView.render();
             });
-        }
+        },
 
 
-    });
+		showShoppingList:function () {
+			require(['views/shoppingListView'], function (ShoppingListView) {
+				t("inside showShoppingList [router.js]");
+				if (typeof App.views.shoppingListView === "undefined") {
+					App.views.shoppingListView = new ShoppingListView;
+				}
+				App.router.navigate('#shoppingList');
+				App.views.shoppingListView.render();
+			});
+		}
+	});
 	return Router;
 });
