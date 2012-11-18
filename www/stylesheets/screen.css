@@ -352,7 +352,7 @@ a.button {
 /* line 207, ../sass/screen.scss */
 a.button, button, ul.button-group button, ul.button-group button.green {
   color: white;
-  padding: 10px 15px;
+  padding: 10px 10px;
   margin: 3px 10px;
   font-size: 90%;
   font-family: sans-serif;

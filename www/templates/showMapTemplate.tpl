@@ -1,1 +1,1 @@
-<div style="border: 1px solid white; position: absolute; bottom: 10px; width:30px">Button</div>
+<div id="mapTotal" style="position: absolute; top: 20px; left: 10px;"></div>

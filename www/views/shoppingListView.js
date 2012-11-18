@@ -27,6 +27,8 @@ define(['text!templates/shoppingListTemplate.tpl',
 				$('h1').text("Shopping List");
 
 				$('#backButton').show();
+				$('#backButton').attr('href', '#');
+				$('#logOutButton').show();
 
 				this.$el.html(this.template());
 
