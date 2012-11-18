@@ -1,28 +1,38 @@
-define(['text!templates/shoppingListTemplate.tpl', 'collections/shoppingListsCollection', 'hackathon'], function (shoppingListTemplate, shoppingListsCollection) {
+define(['text!templates/shoppingListTemplate.tpl',
+	'text!templates/tabbarTemplate.tpl',
+	'views/tabbarView',
+	'hackathon'],
+	function (shoppingListTemplate, footerTemplate, FooterView) {
 
-	var ShoppingListView = Hackathon.View.extend({
+		var ShoppingListView = Hackathon.View.extend({
 
-		el:"#page",
+			el:"#page",
 
-		template:_.template(shoppingListTemplate),
+			template      :_.template(shoppingListTemplate),
+			footerTemplate:_.template(footerTemplate),
 
-		events:{
-		},
+			events:{
+			},
 
-		initialize:function () {
-			t("inside initialize [shoppingListView.js]");
+			initialize:function () {
+				t("inside initialize [shoppingListView.js]");
 
+				App.views.tabbarView = new FooterView();
+				App.views.tabbarView.render();
+			},
 
-		},
+			render:function () {
+				t("inside render [shoppingListView.js]");
 
-		render:function () {
-			t("inside render [shoppingListView.js]");
+				$('h1').text("Shopping List");
 
-			$('h1').text("Shopping List");
+				this.$el.html(this.template());
 
-			this.$el.html(this.template());
-		}
+				$('#footer').html(this.footerTemplate());
+				$('.tabs #footer_goShopping').show();
+				$('.tabs #footer_start').hide();
+			}
+		});
+
+		return ShoppingListView;
 	});
-
-	return ShoppingListView;
-});

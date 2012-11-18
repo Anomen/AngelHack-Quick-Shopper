@@ -1,33 +1,39 @@
-define(['text!templates/loginTemplate.tpl', 'collections/loginsCollection', 'hackathon'], function(loginTemplate, LoginsCollection) {
-    
-    var LoginView = Hackathon.View.extend({
-        
-        el: "#page",
+define(['text!templates/loginTemplate.tpl',
+	'hackathon'],
 
-        template: _.template(loginTemplate),
+	function (loginTemplate) {
 
-        events: {
-			"click #login" :"showListView"
-        },
-        
-        initialize: function() {
-            t("inside initialize [loginView.js]");
-        },
+		var LoginView = Hackathon.View.extend({
 
-        render: function() {
-            t("inside render [loginView.js]");
-            
-            this.$el.html(this.template());
-        },
+			el:"#page",
 
-		showListView: function() {
-			t("inside showListView [loginView.js]");
+			template:_.template(loginTemplate),
 
-			$('h1').text("Easy Shopping");
+			events:{
+				"click .button":"showListView"
+			},
 
-			App.router.showShoppingList();
-		}
-    });
-    
-    return LoginView;
-});
+			initialize: function () {
+				t("inside initialize [loginView.js]");
+			},
+
+			render: function () {
+				t("inside render [loginView.js]");
+
+				$('#logOutButton').hide();
+				$('h1').text("Easy Shopping");
+
+				this.$el.html(this.template());
+			},
+
+			showListView: function () {
+				t("inside showListView [loginView.js]");
+
+				$('#logOutButton').show();
+
+				App.router.showShoppingList();
+			}
+		});
+
+		return LoginView;
+	});

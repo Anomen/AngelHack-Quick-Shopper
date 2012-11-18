@@ -127,15 +127,13 @@
                 </li>
             </div>
         </div>
-
-        <div style="position:absolute; botton:0px;"><input id="siri" x-webkit-speech/></div>
-    
-    
+        <footer ><input id="siri" x-webkit-speech/></footer>
+    </section>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <div style="position:absolute; botton:0px;"><input id="siri" x-webkit-speech/></div>
 
     <script>
         (function () {
-
-    // Prevent focusing on the Siri button input
             $("#siri").focus(function () {
                 $(this).blur();
             });
