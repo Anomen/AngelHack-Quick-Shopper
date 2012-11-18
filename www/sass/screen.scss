@@ -480,7 +480,7 @@ button.delete-button {
 ********************************************************/
 #page-bg {
     @include box-flex(1);
-    background: #444 url(../images/ipad_resources/badge_bg.png) no-repeat;
+    background: #444;
     position: relative;
     //margin-bottom:$bottomBarHeight;
     margin-bottom: 0;

@@ -1,0 +1,1014 @@
+/* line 17, ../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/********************************************************* 
+ * General Classes
+ ********************************************************/
+/* line 6, ../sass/general.scss */
+.corner-all, .box .content, ul.list2 {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 10, ../sass/general.scss */
+.box-shadow, .box .content, #header-bg {
+  -webkit-box-shadow: 0 0 15px #222222;
+  -moz-box-shadow: 0 0 15px #222222;
+  box-shadow: 0 0 15px #222222;
+}
+
+/* line 14, ../sass/general.scss */
+.layout-vertical, body, ul.tabs li, #footer ul.tabs li, ul.button-group li, #header, #old-header, #popup-bg {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+  box-orient: vertical;
+}
+
+/* line 19, ../sass/general.scss */
+.layout-horizontal, ul.list1 li, ul.list2 li, ul.tabs, #footer ul.tabs, ul.button-group, #header .content, #old-header .content, #header .left-side, #header .right-side, #header #old-header .right-side, #old-header #header .right-side, #old-header .left-side, #old-header .right-side, .ports-bar {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: box;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -ms-box-orient: horizontal;
+  box-orient: horizontal;
+}
+
+/* line 24, ../sass/general.scss */
+.flex1 {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -ms-box-flex: 1;
+  box-flex: 1;
+}
+
+/* line 28, ../sass/general.scss */
+.pack-center {
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-box-pack: center;
+  box-pack: center;
+}
+
+/* line 32, ../sass/general.scss */
+.align-center {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-box-align: center;
+  box-align: center;
+}
+
+/********************************************************* 
+* Parameters
+********************************************************/
+/********************************************************* 
+* General Tags
+********************************************************/
+/* line 51, ../sass/screen.scss */
+body {
+  -webkit-user-select: none;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  color: white;
+  font-family: "MS Sans Serif", Geneva, sans-serif;
+  height: 100%;
+  background-color: #444444;
+}
+
+/* line 63, ../sass/screen.scss */
+a {
+  color: #ad8412;
+  text-decoration: none;
+}
+
+/* line 68, ../sass/screen.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 72, ../sass/screen.scss */
+img {
+  vertical-align: middle;
+}
+
+/* line 76, ../sass/screen.scss */
+iframe {
+  display: none;
+}
+
+/* line 80, ../sass/screen.scss */
+input {
+  border: 0;
+  background: transparent;
+  width: 80%;
+  height: 30px;
+  text-align: right;
+  font-size: 16px;
+}
+
+/********************************************************* 
+* PAGE ELEMENTS
+********************************************************/
+/* line 93, ../sass/screen.scss */
+.box {
+  margin: 15px 15px 0 15px;
+}
+/* line 95, ../sass/screen.scss */
+.box:last-child {
+  margin-bottom: 15px;
+}
+/* line 98, ../sass/screen.scss */
+.box h2 {
+  color: white;
+  margin: -5px 5px 5px 5px;
+  font-size: 95%;
+  font-weight: normal;
+}
+/* line 104, ../sass/screen.scss */
+.box .content {
+  background-color: #eee;
+  padding: 15px;
+  color: #ad8412;
+}
+/* line 111, ../sass/screen.scss */
+.box .text {
+  color: #333;
+}
+/* line 114, ../sass/screen.scss */
+.box ul.list2 {
+  margin: -15px;
+}
+
+/* line 120, ../sass/screen.scss */
+ul.list1 li, ul.list2 li {
+  font-weight: bold;
+  line-height: 30px;
+}
+/* line 124, ../sass/screen.scss */
+ul.list1 li div.value, ul.list2 li div.value {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -ms-box-flex: 1;
+  box-flex: 1;
+  font-weight: normal;
+  text-align: right;
+  color: #333;
+}
+
+/* line 133, ../sass/screen.scss */
+ul.list2 {
+  color: #ad8412;
+  background: #DDD;
+}
+/* line 138, ../sass/screen.scss */
+ul.list2 li {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-box-align: center;
+  box-align: center;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #eaeaea), color-stop(100%, #ffffff));
+  background-image: -webkit-linear-gradient(#eaeaea, #ffffff);
+  background-image: -moz-linear-gradient(#eaeaea, #ffffff);
+  background-image: -o-linear-gradient(#eaeaea, #ffffff);
+  background-image: linear-gradient(#eaeaea, #ffffff);
+  min-height: 37px;
+  margin: 1px;
+  padding: 10px 15px;
+}
+/* line 145, ../sass/screen.scss */
+ul.list2 li:first-child {
+  -moz-border-radius-topleft: 10px;
+  -webkit-border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -webkit-border-top-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+/* line 148, ../sass/screen.scss */
+ul.list2 li:last-child {
+  -moz-border-radius-bottomleft: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* line 155, ../sass/screen.scss */
+ul.menu-icons li {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -ms-box-flex: 1;
+  box-flex: 1;
+  text-align: center;
+}
+/* line 158, ../sass/screen.scss */
+ul.menu-icons li img {
+  width: 80px;
+}
+
+/* line 164, ../sass/screen.scss */
+ul.tabs, #footer ul.tabs {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-box-align: center;
+  box-align: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-box-pack: center;
+  box-pack: center;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(50%, #333333), color-stop(50%, #000000));
+  background-image: -webkit-linear-gradient(#333333 50%, #000000 50%);
+  background-image: -moz-linear-gradient(#333333 50%, #000000 50%);
+  background-image: -o-linear-gradient(#333333 50%, #000000 50%);
+  background-image: linear-gradient(#333333 50%, #000000 50%);
+  height: 70px;
+  font-size: 80%;
+  color: #aaa;
+}
+/* line 172, ../sass/screen.scss */
+ul.tabs li, #footer ul.tabs li {
+  width: 150px;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-box-align: center;
+  box-align: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-box-pack: center;
+  box-pack: center;
+  text-align: center;
+  height: 70px;
+}
+/* line 179, ../sass/screen.scss */
+ul.tabs li.selected, #footer ul.tabs li.selected {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(50%, #555555), color-stop(50%, #222222));
+  background-image: -webkit-linear-gradient(#555555 50%, #222222 50%);
+  background-image: -moz-linear-gradient(#555555 50%, #222222 50%);
+  background-image: -o-linear-gradient(#555555 50%, #222222 50%);
+  background-image: linear-gradient(#555555 50%, #222222 50%);
+  color: #fff;
+}
+
+/* line 186, ../sass/screen.scss */
+ul.vertical-tabs {
+  color: #FFF;
+}
+/* line 189, ../sass/screen.scss */
+ul.vertical-tabs li.selected {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f3bc25), color-stop(100%, #ecbe44)) !important;
+  background-image: -webkit-linear-gradient(#f3bc25, #ecbe44) !important;
+  background-image: -moz-linear-gradient(#f3bc25, #ecbe44) !important;
+  background-image: -o-linear-gradient(#f3bc25, #ecbe44) !important;
+  background-image: linear-gradient(#f3bc25, #ecbe44) !important;
+  color: #000 !important;
+}
+
+/* line 196, ../sass/screen.scss */
+.tabs-content {
+  display: none;
+}
+
+/********************************************************* 
+* COMPONENTS
+********************************************************/
+/* line 203, ../sass/screen.scss */
+a.button {
+  line-height: 45px;
+}
+
+/* line 207, ../sass/screen.scss */
+a.button, button, ul.button-group button, ul.button-group button.green {
+  color: white;
+  padding: 10px 15px;
+  margin: 3px 10px;
+  font-size: 90%;
+  font-family: sans-serif;
+  font-weight: bold;
+  border: 0;
+  -webkit-box-shadow: 0 0 3px #222222;
+  -moz-box-shadow: 0 0 3px #222222;
+  box-shadow: 0 0 3px #222222;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(50%, #666666), color-stop(50%, #333333));
+  background-image: -webkit-linear-gradient(#666666 50%, #333333 50%);
+  background-image: -moz-linear-gradient(#666666 50%, #333333 50%);
+  background-image: -o-linear-gradient(#666666 50%, #333333 50%);
+  background-image: linear-gradient(#666666 50%, #333333 50%);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+}
+
+/* line 220, ../sass/screen.scss */
+ul.button-group {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-box-align: center;
+  box-align: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-box-pack: center;
+  box-pack: center;
+  padding-left: 10px;
+}
+/* line 225, ../sass/screen.scss */
+ul.button-group li {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -ms-box-flex: 1;
+  box-flex: 1;
+  text-align: center;
+  padding: 10px 10px 10px 0;
+}
+/* line 231, ../sass/screen.scss */
+ul.button-group button, ul.button-group button, ul.button-group button.green {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #84868b), color-stop(100%, #626469));
+  background-image: -webkit-linear-gradient(#84868b, #626469);
+  background-image: -moz-linear-gradient(#84868b, #626469);
+  background-image: -o-linear-gradient(#84868b, #626469);
+  background-image: linear-gradient(#84868b, #626469);
+  border: 1px solid #111;
+  font-size: 90%;
+  font-weight: normal;
+  width: 100%;
+  height: 40px;
+  margin: 0;
+}
+/* line 241, ../sass/screen.scss */
+ul.button-group button.green, ul.button-group button.green {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f3bc25), color-stop(100%, #ad8412));
+  background-image: -webkit-linear-gradient(#f3bc25, #ad8412);
+  background-image: -moz-linear-gradient(#f3bc25, #ad8412);
+  background-image: -o-linear-gradient(#f3bc25, #ad8412);
+  background-image: linear-gradient(#f3bc25, #ad8412);
+}
+
+/* line 247, ../sass/screen.scss */
+button.black, ul.button-group button.black, ul.button-group button.gray, ul.button-group button.black.green, ul.button-group button.green.gray, button.gray {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(50%, #666666), color-stop(50%, #444444));
+  background-image: -webkit-linear-gradient(#666666 50%, #444444 50%);
+  background-image: -moz-linear-gradient(#666666 50%, #444444 50%);
+  background-image: -o-linear-gradient(#666666 50%, #444444 50%);
+  background-image: linear-gradient(#666666 50%, #444444 50%);
+  color: #FFF;
+  padding: 5px 15px;
+  font-size: 80%;
+  margin: 0px;
+}
+
+/* line 255, ../sass/screen.scss */
+button.gray, ul.button-group button.gray, ul.button-group button.gray.green {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(50%, #eeeeee), color-stop(50%, #dddddd));
+  background-image: -webkit-linear-gradient(#eeeeee 50%, #dddddd 50%);
+  background-image: -moz-linear-gradient(#eeeeee 50%, #dddddd 50%);
+  background-image: -o-linear-gradient(#eeeeee 50%, #dddddd 50%);
+  background-image: linear-gradient(#eeeeee 50%, #dddddd 50%);
+  color: #999;
+}
+
+/* line 261, ../sass/screen.scss */
+.label {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -ms-box-flex: 1;
+  box-flex: 1;
+  color: #ad8412;
+  font-weight: bold;
+}
+
+/* line 267, ../sass/screen.scss */
+.error {
+  color: red;
+}
+
+/* line 271, ../sass/screen.scss */
+.value {
+  color: black;
+}
+
+/* line 275, ../sass/screen.scss */
+.description {
+  color: #333;
+  font-size: 90%;
+  font-weight: normal;
+}
+
+/* line 281, ../sass/screen.scss */
+.blank {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -ms-box-flex: 1;
+  box-flex: 1;
+}
+
+/* line 285, ../sass/screen.scss */
+.next-button {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -ms-box-flex: 1;
+  box-flex: 1;
+  -webkit-background-origin: content;
+  -moz-background-origin: content;
+  -ms-background-origin: content-box;
+  -o-background-origin: content-box;
+  background-origin: content-box;
+  background: url(../images/next.png) no-repeat right;
+  text-align: right;
+  min-width: 30px;
+}
+
+/* line 293, ../sass/screen.scss */
+.edit-button {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -ms-box-flex: 1;
+  box-flex: 1;
+  -webkit-background-origin: content;
+  -moz-background-origin: content;
+  -ms-background-origin: content-box;
+  -o-background-origin: content-box;
+  background-origin: content-box;
+  background: url(../images/edit.png) no-repeat right;
+  text-align: right;
+  width: 30px;
+  height: 30px;
+}
+
+/* line 302, ../sass/screen.scss */
+input.password-field {
+  -webkit-text-security: disc;
+}
+
+/* line 306, ../sass/screen.scss */
+input.error {
+  color: red;
+  background: url(../images/underline.gif) bottom repeat-x;
+}
+
+/* line 311, ../sass/screen.scss */
+.checkbox {
+  display: block;
+  width: 94px;
+  height: 27px;
+  overflow: hidden;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  margin: 0 0 0 auto;
+}
+/* line 318, ../sass/screen.scss */
+.checkbox input[type=checkbox] {
+  display: none;
+}
+/* line 321, ../sass/screen.scss */
+.checkbox input[type=checkbox] + label {
+  text-indent: -9999px;
+  display: block;
+  width: 150px;
+  height: 27px;
+  line-height: 27px;
+  background: transparent url(../images/sprite.png) no-repeat -56px 0;
+  -webkit-transition: background-position 0.3s ease-in-out;
+  -moz-transition: background-position 0.3s ease-in-out;
+}
+/* line 331, ../sass/screen.scss */
+.checkbox input[type=checkbox]:checked + label {
+  -webkit-transition: background-position 0.3s ease-in-out;
+  -moz-transition: background-position 0.3s ease-in-out;
+  background-position: -3px 0;
+}
+
+/* line 338, ../sass/screen.scss */
+.delete-control-button {
+  display: block;
+  overflow: hidden;
+  padding-right: 10px;
+}
+/* line 342, ../sass/screen.scss */
+.delete-control-button input[type=checkbox] {
+  display: none;
+}
+/* line 345, ../sass/screen.scss */
+.delete-control-button input[type=checkbox] + label {
+  display: block;
+  height: 30px;
+  width: 30px;
+  background: transparent url(../images/deletion-control.png) no-repeat center;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+/* line 355, ../sass/screen.scss */
+.delete-control-button input[type=checkbox]:checked + label {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+/* line 363, ../sass/screen.scss */
+.folded {
+  width: 0;
+  overflow: hidden;
+}
+
+/* line 368, ../sass/screen.scss */
+button.delete-button, ul.button-group button.delete-button, ul.button-group button.delete-button.green {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(50%, #dd0000), color-stop(50%, #bb0000));
+  background-image: -webkit-linear-gradient(#dd0000 50%, #bb0000 50%);
+  background-image: -moz-linear-gradient(#dd0000 50%, #bb0000 50%);
+  background-image: -o-linear-gradient(#dd0000 50%, #bb0000 50%);
+  background-image: linear-gradient(#dd0000 50%, #bb0000 50%);
+  line-height: 10px;
+}
+
+/********************************************************* 
+* HEADER
+********************************************************/
+/* line 376, ../sass/screen.scss */
+#header-bg {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(50%, #333333), color-stop(50%, #222222));
+  background-image: -webkit-linear-gradient(#333333 50%, #222222 50%);
+  background-image: -moz-linear-gradient(#333333 50%, #222222 50%);
+  background-image: -o-linear-gradient(#333333 50%, #222222 50%);
+  background-image: linear-gradient(#333333 50%, #222222 50%);
+}
+
+/* line 383, ../sass/screen.scss */
+#header .content, #old-header .content {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-box-align: center;
+  box-align: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-box-pack: center;
+  box-pack: center;
+  height: 55px;
+  z-index: 2;
+  height: 55px;
+}
+/* line 392, ../sass/screen.scss */
+#header .left-side, #header .right-side, #header #old-header .right-side, #old-header #header .right-side, #old-header .left-side, #old-header #header .right-side, #header #old-header .right-side, #old-header .right-side {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 55px;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-box-align: center;
+  box-align: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-box-pack: center;
+  box-pack: center;
+}
+/* line 400, ../sass/screen.scss */
+#header .left-side img.icon, #header .right-side img.icon, #header #old-header .right-side img.icon, #old-header #header .right-side img.icon, #old-header .left-side img.icon, #old-header #header .right-side img.icon, #header #old-header .right-side img.icon, #old-header .right-side img.icon {
+  height: 40px;
+  margin: 7.5px;
+}
+/* line 407, ../sass/screen.scss */
+#header .right-side, #old-header .right-side {
+  right: 0;
+  left: auto;
+}
+/* line 413, ../sass/screen.scss */
+#header .center-side, #old-header .center-side {
+  text-align: center;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -ms-box-flex: 1;
+  box-flex: 1;
+}
+/* line 416, ../sass/screen.scss */
+#header .center-side h1, #old-header .center-side h1 {
+  font-size: 140%;
+  text-shadow: 0px 0px 5px black;
+}
+
+/********************************************************* 
+* FOOTER
+********************************************************/
+/* line 426, ../sass/screen.scss */
+#footer {
+  height: 70px;
+  z-index: 2;
+  font-size: 90%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/* line 437, ../sass/screen.scss */
+#footer ul.tabs li, #footer ul.tabs li {
+  color: #777;
+  font-weight: bold;
+  overflow: hidden;
+  text-align: center;
+}
+/* line 443, ../sass/screen.scss */
+#footer ul.tabs li .icon, #footer ul.tabs li .icon {
+  background: #777;
+  width: 30px;
+  height: 30px;
+  -webkit-mask-size: 30px;
+  margin: 0 auto;
+}
+/* line 450, ../sass/screen.scss */
+#footer ul.tabs li.selected, #footer ul.tabs li.selected {
+  color: #fff;
+}
+/* line 452, ../sass/screen.scss */
+#footer ul.tabs li.selected .icon, #footer ul.tabs li.selected .icon {
+  background-position: 0 -50px;
+}
+/* line 457, ../sass/screen.scss */
+#footer ul.tabs li .icon-locations, #footer ul.tabs li .icon-locations, #footer ul.tabs li .icon-badges, #footer ul.tabs li .icon-badges, #footer ul.tabs li .icon-news, #footer ul.tabs li .icon-news, #footer ul.tabs li .icon-events, #footer ul.tabs li .icon-events {
+  background: url(../images/location_icon.png) no-repeat;
+  height: 50px;
+  width: 50px;
+}
+/* line 462, ../sass/screen.scss */
+#footer ul.tabs li .icon-badges, #footer ul.tabs li .icon-badges {
+  background: url(../images/badges_icon.png) no-repeat;
+}
+/* line 466, ../sass/screen.scss */
+#footer ul.tabs li .icon-news, #footer ul.tabs li .icon-news {
+  background: url(../images/news_icon.png) no-repeat;
+}
+/* line 470, ../sass/screen.scss */
+#footer ul.tabs li .icon-events, #footer ul.tabs li .icon-events {
+  background: url(../images/events_icon.png) no-repeat;
+}
+
+/********************************************************* 
+* CONTENT
+********************************************************/
+/* line 481, ../sass/screen.scss */
+#page-bg {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -ms-box-flex: 1;
+  box-flex: 1;
+  background: #444444 url(../images/ipad_resources/badge_bg.png) no-repeat;
+  position: relative;
+  margin-bottom: 0;
+}
+
+/* line 489, ../sass/screen.scss */
+#page, #old-page {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+/********************************************************* 
+* EDIT MODE
+********************************************************/
+/* line 501, ../sass/screen.scss */
+.non-edit-only, .edit-only {
+  overflow: hidden;
+  position: relative !important;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 508, ../sass/screen.scss */
+.edit-only {
+  display: none;
+}
+
+/********************************************************* 
+* Ports Statistics bar
+********************************************************/
+/* line 516, ../sass/screen.scss */
+.ports-bar {
+  width: 100%;
+  height: 70px;
+  background: #626469;
+  border: 3px solid #626469;
+}
+/* line 522, ../sass/screen.scss */
+.ports-bar .EIPExplicit {
+  background: #e47f00;
+}
+/* line 525, ../sass/screen.scss */
+.ports-bar .ModbusMess {
+  background: #ecbe44;
+}
+/* line 528, ../sass/screen.scss */
+.ports-bar .ModbusScan {
+  background: #ffd100;
+}
+/* line 531, ../sass/screen.scss */
+.ports-bar .EIPScanner {
+  background: #42b4e6;
+}
+
+/* line 536, ../sass/screen.scss */
+.ports-bar-legend {
+  font-size: 80%;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -ms-box-flex: 1;
+  box-flex: 1;
+}
+/* line 539, ../sass/screen.scss */
+.ports-bar-legend .EIPExplicit, .ports-bar-legend .ModbusMess, .ports-bar-legend .ModbusScan, .ports-bar-legend .EIPScanner {
+  position: relative;
+  line-height: 20px;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+  /* for Opera 9 */
+  text-overflow: ellipsis;
+  /* for the rest */
+}
+/* line 550, ../sass/screen.scss */
+.ports-bar-legend .value {
+  display: inline-block;
+}
+/* line 553, ../sass/screen.scss */
+.ports-bar-legend .EIPExplicit .value {
+  background: #e47f00;
+}
+/* line 556, ../sass/screen.scss */
+.ports-bar-legend .ModbusMess .value {
+  background: #ecbe44;
+}
+/* line 559, ../sass/screen.scss */
+.ports-bar-legend .ModbusScan .value {
+  background: #ffd100;
+}
+/* line 562, ../sass/screen.scss */
+.ports-bar-legend .EIPScanner .value {
+  background: #42b4e6;
+}
+
+/********************************************************* 
+* Popup
+********************************************************/
+/* line 570, ../sass/screen.scss */
+#popup-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1000;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 0 50px;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-box-align: center;
+  box-align: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-box-pack: center;
+  box-pack: center;
+}
+/* line 583, ../sass/screen.scss */
+#popup-bg h1 {
+  display: block;
+  width: 70%;
+  text-align: center;
+  line-height: 45px;
+  background: #ad8412;
+  -moz-border-radius-topleft: 10px;
+  -webkit-border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -webkit-border-top-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+/* line 591, ../sass/screen.scss */
+#popup-bg .body {
+  -moz-border-radius-bottomleft: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 70%;
+  background: #FFF;
+}
+/* line 596, ../sass/screen.scss */
+#popup-bg .body .box {
+  margin: 0;
+}
+/* line 598, ../sass/screen.scss */
+#popup-bg .body .box .content {
+  -webkit-box-shadow: 0 0 0 #222222;
+  -moz-box-shadow: 0 0 0 #222222;
+  box-shadow: 0 0 0 #222222;
+}
+/* line 604, ../sass/screen.scss */
+#popup-bg .body ul.list1 li:first-child, #popup-bg .body ul.list2 li:first-child {
+  -moz-border-radius-topleft: 0;
+  -webkit-border-top-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-border-radius-topright: 0;
+  -webkit-border-top-right-radius: 0;
+  border-top-right-radius: 0;
+}
+/* line 607, ../sass/screen.scss */
+#popup-bg .body ul.list1 li:last-child, #popup-bg .body ul.list2 li:last-child {
+  -moz-border-radius-bottomleft: 0;
+  -webkit-border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
+  -moz-border-radius-bottomright: 0;
+  -webkit-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+/* line 612, ../sass/screen.scss */
+#popup-bg .body ul.button-group {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+/********************************************************* 
+* Fancy list
+********************************************************/
+/* line 624, ../sass/screen.scss */
+#transparent-menu {
+  z-index: 2000;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 70px;
+  width: 300px;
+}
+/* line 632, ../sass/screen.scss */
+#transparent-menu .transparent-menu-bg {
+  z-index: 3000;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: #000;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+}
+/* line 643, ../sass/screen.scss */
+#transparent-menu ul.vertical-tabs {
+  z-index: 4000;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/* line 651, ../sass/screen.scss */
+#transparent-menu ul.vertical-tabs li {
+  min-height: 30px;
+  padding: 10px;
+}
+
+/* line 658, ../sass/screen.scss */
+#map_canvas {
+  position: absolute;
+  top: 0;
+  bottom: 70px;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+/********************************************************* 
+* News list
+********************************************************/
+/* line 671, ../sass/screen.scss */
+.item_title {
+  font-weight: bold;
+  color: #000;
+  font-size: 25px;
+}
+
+/* line 677, ../sass/screen.scss */
+.item_body {
+  color: #000;
+  width: 90%;
+}
+
+/* line 682, ../sass/screen.scss */
+.postedby {
+  font-size: 14px;
+  color: gray;
+  font-style: italic;
+}
+
+/* line 688, ../sass/screen.scss */
+.item_date {
+  font-size: 12px;
+  color: #1f2d7d;
+}

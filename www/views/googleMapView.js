@@ -1,8 +1,7 @@
 define(['text!templates/googleMapTemplate.tpl',
 	'text!templates/tabbarTemplate.tpl',
-	'collections/googleMapsCollection',
 	'hackathon'],
-	function (googleMapTemplate, footerTemplate, googleMapsCollection) {
+	function (googleMapTemplate, footerTemplate) {
 
 		var GoogleMapView = Hackathon.View.extend({
 

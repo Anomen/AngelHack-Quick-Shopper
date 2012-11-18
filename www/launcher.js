@@ -33,8 +33,4 @@ require([
     // Initialize the connection between client and server
     //d("Connecting to socket using ip: " + App.ip);
     //Backbone.io.connect(App.ip);
-
-    // Set the BG depending of the device
-    if (navigator.userAgent.toLowerCase().indexOf("android") > -1) // android
-        $("#page-bg").css("background-image", "url(images/android_resources/android_bg.png)");
 });

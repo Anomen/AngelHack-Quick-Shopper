@@ -1,7 +1,5 @@
 define(['hackathon'], function () {
-
 	var Router = Hackathon.Router.extend({
-
 		routes          :{
 			''            :'login',
 			'login'       :'login',
@@ -27,6 +25,7 @@ define(['hackathon'], function () {
 		},
 		showGoogleMap   :function () {
 			t("inside googleMap [router.js]");
+
 			require(['views/googleMapView'], function (GoogleMapView) {
 				if (typeof App.views.googleMapView === "undefined") {
 					App.views.googleMapView = new GoogleMapView();
@@ -37,6 +36,7 @@ define(['hackathon'], function () {
 		},
 		showMap         :function () {
 			t("inside shopMap [router.js]");
+
 			require(['views/showMapView'], function (ShowMapView) {
 				if (typeof App.views.showMapView === "undefined") {
 					App.views.showMapView = new ShowMapView();
@@ -47,6 +47,7 @@ define(['hackathon'], function () {
 		},
 		showMapList     :function () {
 			t("inside showMapList [router.js]");
+
 			require(['views/showMapListView'], function (ShowMapListView) {
 				if (typeof App.views.showMapListView === "undefined") {
 					App.views.showMapListView = new ShowMapListView();

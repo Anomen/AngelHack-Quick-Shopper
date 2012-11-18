@@ -1,8 +1,8 @@
 define(['text!templates/shoppingListTemplate.tpl',
 	'text!templates/tabbarTemplate.tpl',
-	'collections/shoppingListsCollection',
+	'views/tabbarView',
 	'hackathon'],
-	function (shoppingListTemplate, footerTemplate, shoppingListsCollection) {
+	function (shoppingListTemplate, footerTemplate, FooterView) {
 
 		var ShoppingListView = Hackathon.View.extend({
 
@@ -16,6 +16,9 @@ define(['text!templates/shoppingListTemplate.tpl',
 
 			initialize:function () {
 				t("inside initialize [shoppingListView.js]");
+
+				App.views.tabbarView = new FooterView();
+				App.views.tabbarView.render();
 			},
 
 			render:function () {

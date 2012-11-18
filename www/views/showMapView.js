@@ -5,15 +5,15 @@ define([
 ], function (showMapTemplate, footerTemplate) {
 
 	var ShowMapView = Hackathon.View.extend({
-		el        :"#page",
-		template  :_.template(showMapTemplate),
+		el            :"#page",
+		template      :_.template(showMapTemplate),
 		footerTemplate:_.template(footerTemplate),
-		events    :{
+		events        :{
 		},
-		initialize:function () {
+		initialize    :function () {
 			t("inside initialize [showMapView.js]");
 		},
-		render    :function () {
+		render        :function () {
 			t("inside render [showMapView.js]");
 
 			$("h1").text("Market Basket");
@@ -29,11 +29,8 @@ define([
 		renderMap:function () {
 			t("inside renderShopMap [showMapView.js]");
 
-
 			var paper = new Raphael(10, 70, 300, 400);
-
 			var rect = paper.rect(0, 0, 300, 320).attr({fill:'fff'});
-
 
 			var isle1 = paper.rect(0, 40, 130, 2).attr({fill:'fff'});
 
@@ -63,14 +60,31 @@ define([
 
 			var isle14 = paper.rect(170, 280, 130, 2).attr({fill:'fff'});
 
+			var entrance1 = paper.circle(60, 0, 25).attr({fill:'fff'});
+			var entrance1Text = paper.text(60, 6, 'Entrance').attr({fill:'#000' });
 
-			var entrance1 = paper.circle(60, 0, 20).attr({fill:'fff'});
+			var entrance2 = paper.circle(250, 0, 25).attr({fill:'fff'});
+			var entrance1Text2 = paper.text(250, 6, 'Entrance').attr({fill:'#000' });
 
-			var entrance2 = paper.circle(250, 0, 20).attr({fill:'fff'});
 
-			//var circ = paper.circle(0,250,20).attr({fill:'fff'});
+			var start = paper.circle(80, 20, 5).attr({fill:'#3a9a2d'});
 
-			//var circ = paper.circle(300,250,20).attr({fill:'fff'});
+			var product1 = paper.circle(70, 78, 5).attr({fill:'#3a9a2d'});
+
+			var product2 = paper.circle(270, 84, 5).attr({fill:'#3a9a2d'});
+
+			var product3 = paper.circle(30, 238, 5).attr({fill:'#3a9a2d'});
+
+			var product4 = paper.circle(280, 278, 5).attr({fill:'#3a9a2d'});
+
+
+			var bestPathToObject1 = paper.path("M84,20L150,20L150,58L70,58L70,74").attr({stroke:'red', "stroke-width":3 });
+
+			var bestPathToObject2 = paper.path("M72,73L150,73L150,90L268,90").attr({stroke:'red', "stroke-width":3 });
+
+			var bestPathToObject3 = paper.path("M270,88L270,106L150,106L150,217L30,217L30,234").attr({stroke:'red', "stroke-width":3 });
+
+			var bestPathToObject3 = paper.path("M32,232L150,232L150,260L280,260L280,274").attr({stroke:'red', "stroke-width":3 });
 
 
 			/*
