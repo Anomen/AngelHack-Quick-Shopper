@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e67a97e1-0df6-45eb-b4ca-add0394e30a9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/addItem_icon.png" afterPath="$PROJECT_DIR$/images/addItem_icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/cart_icon.png" afterPath="$PROJECT_DIR$/images/cart_icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/start_icon.png" afterPath="$PROJECT_DIR$/images/start_icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/googleMapView.js" afterPath="$PROJECT_DIR$/views/googleMapView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/loginView.js" afterPath="$PROJECT_DIR$/views/loginView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/shoppingListView.js" afterPath="$PROJECT_DIR$/views/shoppingListView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/showMapListView.js" afterPath="$PROJECT_DIR$/views/showMapListView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/showMapView.js" afterPath="$PROJECT_DIR$/views/showMapView.js" />
-    </list>
+    <list default="true" id="e67a97e1-0df6-45eb-b4ca-add0394e30a9" name="Default" comment="" />
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -43,7 +32,7 @@
       <file leaf-file-name="loginView.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/loginView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="40" selection-start="521" selection-end="545" vertical-scroll-proportion="0.0">
+            <state line="31" column="34" selection-start="669" selection-end="687" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -67,10 +56,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="showMapView.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="googleMapTemplate.tpl" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/googleMapTemplate.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="47" selection-start="53" selection-end="53" vertical-scroll-proportion="0.018973215">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="showMapView.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/showMapView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="48" selection-start="484" selection-end="484" vertical-scroll-proportion="0.32254463">
+            <state line="21" column="0" selection-start="555" selection-end="555" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#945#4128#0" expanded="false" />
               </folding>
@@ -114,7 +112,6 @@
       <list>
         <option value="$PROJECT_DIR$/models/googleMapModel.js" />
         <option value="$PROJECT_DIR$/collections/googleMapsCollection.js" />
-        <option value="$PROJECT_DIR$/templates/googleMapTemplate.tpl" />
         <option value="$PROJECT_DIR$/views/tabbarView.js" />
         <option value="$PROJECT_DIR$/router.js" />
         <option value="$PROJECT_DIR$/templates/loginTemplate.tpl" />
@@ -128,6 +125,7 @@
         <option value="$PROJECT_DIR$/views/googleMapView.js" />
         <option value="$PROJECT_DIR$/views/showMapView.js" />
         <option value="$PROJECT_DIR$/views/showMapListView.js" />
+        <option value="$PROJECT_DIR$/templates/googleMapTemplate.tpl" />
       </list>
     </option>
   </component>
@@ -193,6 +191,34 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -322,13 +348,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sass/general.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sass/ie.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -382,20 +401,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/googleMapView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="60" selection-start="702" selection-end="702" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/loginView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="40" selection-start="521" selection-end="545" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/shoppingListView.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="57" selection-start="608" selection-end="608" vertical-scroll-proportion="0.0">
@@ -422,10 +427,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/showMapView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="48" selection-start="484" selection-end="484" vertical-scroll-proportion="0.32254463">
+        <state line="21" column="0" selection-start="555" selection-end="555" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#945#4128#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/loginView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="34" selection-start="669" selection-end="687" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/googleMapView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="60" selection-start="702" selection-end="702" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/googleMapTemplate.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="47" selection-start="53" selection-end="53" vertical-scroll-proportion="0.018973215">
+          <folding />
         </state>
       </provider>
     </entry>

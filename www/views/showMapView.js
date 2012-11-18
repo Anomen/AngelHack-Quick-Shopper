@@ -29,6 +29,11 @@ define([
 			$('.tabs #footer_start').show();
 
             $('.tabs #footer_start').click(this.hideMap);
+
+            $("svg_small1").show();
+            //$("svg").show();
+
+
 			this.renderMap();
 		},
 
@@ -38,7 +43,8 @@ define([
 		renderMap:function () {
 			t("inside renderShopMap [showMapView.js]");
 
-			var paper = new Raphael(10, 70, 300, 400);
+            var paper = Raphael(document.getElementById("mapTotal"), 300, 400);
+			//var paper = new Raphael(10, 70, 300, 400);
 			var rect = paper.rect(0, 0, 300, 320).attr({fill:'fff'});
 
 			var isle1 = paper.rect(0, 40, 130, 2).attr({fill:'fff'});

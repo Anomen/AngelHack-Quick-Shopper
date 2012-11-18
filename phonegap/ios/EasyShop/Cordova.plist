@@ -24,6 +24,9 @@
 	<true/>
 	<key>ExternalHosts</key>
 	<array>
+		<string>10.10.16.207:4001</string>
+		<string>10.10.16.207</string>
+		<string>http://10.10.16.207:4001</string>
 		<string>http://10.10.16.220:4000</string>
 		<string>10.10.16.220</string>
 		<string>10.10.16.220:4000</string>
