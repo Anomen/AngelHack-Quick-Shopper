@@ -33,4 +33,14 @@
     <div style="margin: 20px; text-align: center;">
         <a href="#" class="button">Scan labels</a>
     </div>
+
+    <div id="log" style="text-align: center; display: none">
+    </div>
+
+    <div class="box" style="display: none">
+        <div class="content">
+            <ul class="list2" id="result">
+            </ul>
+        </div>
+    </div>
 </div>
