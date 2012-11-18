@@ -4,13 +4,11 @@ define(['text!templates/storeTemplate.tpl', 'text!templates/rowTemplate.tpl', 'b
         template: _.template(storeTemplate),
         rowTemplate: _.template(rowTemplate),
         events: {
-            //'touchstart a': 'record'
+            'touchstart a': 'record'
         },
         initialize: function(){
             t("inside initialize [badgesView.js]");
-            
             _.bindAll(this);
-
 
             ////////////////////////////////////////////////////
             // to test /mnt/sdcard/DCIM/Camera/MOV025.3gp
@@ -51,8 +49,8 @@ define(['text!templates/storeTemplate.tpl', 'text!templates/rowTemplate.tpl', 'b
                 function(error) {
                     console.log('Error uploading file ' + path + ': ' + error.code);
                 },
-                {
-                    fileName: name
+                { 
+                    fileName: name 
                 }
             );   
         },
@@ -77,22 +75,18 @@ define(['text!templates/storeTemplate.tpl', 'text!templates/rowTemplate.tpl', 'b
                         console.log(result.bytesSent + ' bytes sent');
                         console.log(JSON.stringify(result));
                         eval("var res = " + result.response);
+                        $("#result").html("");
                         var total = 0;
                         _.each(res, function(info, bc){
-                            if (info.info.status.code != "404") {
-                                total = total + 1;
-                            }
+                            total = total + 1;
                         });
                         var num = 1;
-                        $("#result").html("");
                         _.each(res, function(info, bc){
-                            if (info.info.status.code != "404") {
-                                $("#result").append(_.template(rowTemplate)({
-                                    info: info.info,
-                                    loc: Math.floor(100 * num / total)
-                                }));
-                                num = num + 1;
-                            }
+                            $("#result").append(_.template(rowTemplate)({
+                                info: info.info,
+                                loc: Math.floor(100 * num / total)
+                            }));
+                            num = num + 1;
                         });
                     },
                     function(error) {
@@ -112,56 +106,11 @@ define(['text!templates/storeTemplate.tpl', 'text!templates/rowTemplate.tpl', 'b
             $("#result").closest(".box").css("display", "none");
             $("#log").css("display", "none");
             t("inside record()");
-            alert("here2");
-
-            var thisInstance = this;
-            navigator.device.capture.captureVideo(function() {
-                console.log(mediaFiles);
-                var i, len;
-                for (i = 0, len = mediaFiles.length; i < len; i += 1) {
-                    console.log(mediaFiles[i]);
-                    //this.uploadFile(mediaFiles[i]);
-                    var ft = new FileTransfer(),
-                        path = mediaFiles[i].fullPath,
-                        name = mediaFiles[i].name;
-
-                    ft.upload(path,
-                        "http://10.10.16.207:4001/upload",
-                        function(result) {
-                            console.log('Upload success: ' + result.responseCode);
-                            console.log(result.bytesSent + ' bytes sent');
-                            console.log(result);
-                        }, function(error) {
-                            console.log('Error uploading file ' + path + ': ' + error.code);
-                        }, {
-                            fileName: name
-                        }
-                    );
-                }
-
-            }, function(error) {
-                 var msg = 'An error occurred during capture: ' + error.code;
-            navigator.notification.alert(msg, null, 'Uh oh!');
-            });
-
-            alert(typeof navigator);
-            alert(typeof navigator.device);
-            alert(typeof navigator.device.capture);
-            alert(typeof navigator.device.capture.captureVideo);
-
+            navigator.device.capture.captureVideo(this.captureSuccess, this.captureError);
         },
         render: function(){
             t("inside render()");
             this.$el.html(this.template());
-
-            var thisInstance = this;
-            $("#scanning").click(function() {
-                alert("here");
-                thisInstance.record();
-
-            });
-
-
         }
     });
     

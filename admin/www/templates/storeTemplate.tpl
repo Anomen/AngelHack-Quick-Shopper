@@ -27,6 +27,7 @@ a.button {
     color:#fff;
 }
 </style>
+
 <div class="layout-vertical">
     <div class="box">
         <div class="content">
@@ -60,9 +61,7 @@ a.button {
     </div>
 
     <div style="margin: 20px; text-align: center;">
-        Hello !<br/>Hello !<br/>
-        <div style="border:20px solid white; line-height:30px;" id="scanning">Scan</div>
-        
+        <a href="#" class="button">Scan labels</a>
     </div>
 
     <div id="log" style="text-align: center; display: none">
