@@ -2,14 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e67a97e1-0df6-45eb-b4ca-add0394e30a9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/showMapListTemplate.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/Thumbs.db" afterPath="$PROJECT_DIR$/images/Thumbs.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/router.js" afterPath="$PROJECT_DIR$/router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../admin/android/bin/build.prop" afterPath="$PROJECT_DIR$/../admin/android/bin/build.prop" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../admin/android/bin/cordovaExample-debug-unaligned.apk" afterPath="$PROJECT_DIR$/../admin/android/bin/cordovaExample-debug-unaligned.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../admin/android/bin/cordovaExample-debug.apk" afterPath="$PROJECT_DIR$/../admin/android/bin/cordovaExample-debug.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../admin/android/bin/cordovaExample.ap_" afterPath="$PROJECT_DIR$/../admin/android/bin/cordovaExample.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../admin/www/index.html" afterPath="$PROJECT_DIR$/../admin/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../admin/www/launcher.js" afterPath="$PROJECT_DIR$/../admin/www/launcher.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../admin/www/sass/screen.scss" afterPath="$PROJECT_DIR$/../admin/www/sass/screen.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../admin/www/stylesheets/screen.css" afterPath="$PROJECT_DIR$/../admin/www/stylesheets/screen.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../admin/www/templates/rowTemplate.tpl" afterPath="$PROJECT_DIR$/../admin/www/templates/rowTemplate.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../admin/www/templates/storeTemplate.tpl" afterPath="$PROJECT_DIR$/../admin/www/templates/storeTemplate.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../admin/www/views/storeView.js" afterPath="$PROJECT_DIR$/../admin/www/views/storeView.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../server/process.sh" afterPath="$PROJECT_DIR$/../server/process.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/launcher.js" afterPath="$PROJECT_DIR$/launcher.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/googleMapTemplate.tpl" afterPath="$PROJECT_DIR$/templates/googleMapTemplate.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/shoppingListTemplate.tpl" afterPath="$PROJECT_DIR$/templates/shoppingListTemplate.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/googleMapView.js" afterPath="$PROJECT_DIR$/views/googleMapView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/shoppingListView.js" afterPath="$PROJECT_DIR$/views/shoppingListView.js" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,10 +62,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="shoppingListTemplate.tpl" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="shoppingListTemplate.tpl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/shoppingListTemplate.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="234" column="61" selection-start="5865" selection-end="5865" vertical-scroll-proportion="0.7780347">
+            <state line="237" column="56" selection-start="6043" selection-end="6043" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="googleMapTemplate.tpl" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/googleMapTemplate.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="21" selection-start="125" selection-end="125" vertical-scroll-proportion="0.019362187">
               <folding />
             </state>
           </provider>
@@ -101,11 +116,11 @@
         <option value="$PROJECT_DIR$/views/loginView.js" />
         <option value="$PROJECT_DIR$/views/showMapView.js" />
         <option value="$PROJECT_DIR$/views/showMapListView.js" />
-        <option value="$PROJECT_DIR$/templates/googleMapTemplate.tpl" />
         <option value="$PROJECT_DIR$/router.js" />
         <option value="$PROJECT_DIR$/views/googleMapView.js" />
         <option value="$PROJECT_DIR$/views/shoppingListView.js" />
         <option value="$PROJECT_DIR$/templates/shoppingListTemplate.tpl" />
+        <option value="$PROJECT_DIR$/templates/googleMapTemplate.tpl" />
       </list>
     </option>
   </component>
@@ -230,7 +245,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2239819" sideWeight="0.6836403" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2239819" sideWeight="0.6836403" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295838" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -365,13 +380,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/googleMapTemplate.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="74" selection-start="24" selection-end="74" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/tabbarTemplate.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="26" selection-start="30" selection-end="44" vertical-scroll-proportion="0.0">
@@ -395,7 +403,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/shoppingListTemplate.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="234" column="61" selection-start="5865" selection-end="5865" vertical-scroll-proportion="0.7780347">
+        <state line="237" column="56" selection-start="6043" selection-end="6043" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/googleMapTemplate.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="21" selection-start="125" selection-end="125" vertical-scroll-proportion="0.019362187">
           <folding />
         </state>
       </provider>

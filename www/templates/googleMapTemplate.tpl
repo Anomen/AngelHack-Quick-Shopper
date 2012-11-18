@@ -1,2 +1,3 @@
-<div class="mapOfShops" style="background-image: url(../images/Map1.PNG);" >
+<div class="mapOfShops" style="background-image: url(./images/Map1.PNG); width: 320px; height: 100%;" >
+    Map is loading...
 </div>

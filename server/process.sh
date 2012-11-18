@@ -20,23 +20,24 @@ ffmpeg -i $video -r 5 -f image2 /tmp/__productfinder/image-%07d.png
 # Get the barcodes
 echo "" > /tmp/__productfinder/barcodes
 for i in /tmp/__productfinder/*.png ; do 
-    zbarimg $i >> /tmp/__productfinder/barcodes
+    zbarimg "$i" >> /tmp/__productfinder/barcodes
 done
 
 # Retrieve the list
 list=`cat /tmp/__productfinder/barcodes | uniq | cut -d : -f 2`
 
 # Get the information for each items
+num=0
 echo "{" > /tmp/__productfinder/informations
 for i in $list ; do
     #info=`curl "https://api.scandit.com/v1/products/$i?key=6G_fwddmpvScyKwMZtasaD4D_Wl718vGvZk2T6mMByT"`
-    info=`curl "http://eandata.com/feed.php?keycode=49F103EC50A7F96D&mode=json&find=$i"`
+    info=`curl "http://eandata.com/feed.php?keycode=017DC54550A8F680&mode=json&find=$i"`
+    num=`expr $num + 1`
     if [[ $info == 'No data available for this code' ]] ; then
         info='{"error": "No data available for this code"}'
     fi
-    echo "'$i': $info," >> /tmp/__productfinder/informations
+    echo "'$i': {info: $info, loc: $num}," >> /tmp/__productfinder/informations
 done
 echo "}" >> /tmp/__productfinder/informations
 
 cat /tmp/__productfinder/informations
-
