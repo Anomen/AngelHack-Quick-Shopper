@@ -1,0 +1,194 @@
+/********************************************************* 
+ * General Classes
+ ********************************************************/
+/* line 6, ../sass/general.scss */
+.corner-all {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 10, ../sass/general.scss */
+.box-shadow, #page-menu, #page-menu-content {
+  -webkit-box-shadow: 0 0 15px #222222;
+  -moz-box-shadow: 0 0 15px #222222;
+  box-shadow: 0 0 15px #222222;
+}
+
+/* line 14, ../sass/general.scss */
+.layout-vertical, #page-menu {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+  box-orient: vertical;
+}
+
+/* line 19, ../sass/general.scss */
+.layout-horizontal, #page-menu ul li, #page-menu .topbar, #page-menu-content .topbar {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: box;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -ms-box-orient: horizontal;
+  box-orient: horizontal;
+}
+
+/* line 24, ../sass/general.scss */
+.flex1 {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -ms-box-flex: 1;
+  box-flex: 1;
+}
+
+/* line 28, ../sass/general.scss */
+.pack-center {
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-box-pack: center;
+  box-pack: center;
+}
+
+/* line 32, ../sass/general.scss */
+.align-center {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-box-align: center;
+  box-align: center;
+}
+
+/********************************************************* 
+* Parameters
+********************************************************/
+/* line 29, ../sass/tablet.scss */
+#page-menu {
+  -moz-border-radius-topleft: 12px;
+  -webkit-border-top-left-radius: 12px;
+  border-top-left-radius: 12px;
+  -moz-border-radius-bottomleft: 12px;
+  -webkit-border-bottom-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  position: absolute;
+  top: 40px;
+  bottom: 90px;
+  left: 20px;
+  width: 250px;
+  background: #393939;
+  overflow: hidden;
+}
+/* line 41, ../sass/tablet.scss */
+#page-menu .label {
+  color: #FFF;
+}
+/* line 44, ../sass/tablet.scss */
+#page-menu ul li {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-box-align: center;
+  box-align: center;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4b4b4b), color-stop(100%, #393939));
+  background-image: -webkit-linear-gradient(#4b4b4b, #393939);
+  background-image: -moz-linear-gradient(#4b4b4b, #393939);
+  background-image: -o-linear-gradient(#4b4b4b, #393939);
+  background-image: linear-gradient(#4b4b4b, #393939);
+  min-height: 37px;
+  padding: 5px 10px;
+}
+/* line 52, ../sass/tablet.scss */
+#page-menu .topbar {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-box-align: center;
+  box-align: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-box-pack: center;
+  box-pack: center;
+  padding: 10px;
+}
+
+/* line 60, ../sass/tablet.scss */
+#page-menu-content {
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  border-radius: 12px;
+  position: absolute;
+  top: 20px;
+  bottom: 70px;
+  left: 270px;
+  right: 20px;
+  background-color: #eee;
+  color: #009530;
+}
+/* line 70, ../sass/tablet.scss */
+#page-menu-content ul.list2 {
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  border-radius: 12px;
+}
+/* line 72, ../sass/tablet.scss */
+#page-menu-content ul.list2 li:first-child {
+  -moz-border-radius-topleft: 0;
+  -webkit-border-top-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-border-radius-topright: 0;
+  -webkit-border-top-right-radius: 0;
+  border-top-right-radius: 0;
+}
+/* line 75, ../sass/tablet.scss */
+#page-menu-content ul.list2 li:last-child {
+  -moz-border-radius-bottomleft: 0;
+  -webkit-border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
+  -moz-border-radius-bottomright: 0;
+  -webkit-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+/* line 80, ../sass/tablet.scss */
+#page-menu-content .topbar {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-box-align: center;
+  box-align: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-box-pack: center;
+  box-pack: center;
+  -moz-border-radius-topleft: 12px;
+  -webkit-border-top-left-radius: 12px;
+  border-top-left-radius: 12px;
+  -moz-border-radius-topright: 12px;
+  -webkit-border-top-right-radius: 12px;
+  border-top-right-radius: 12px;
+  color: #999;
+  padding: 10px;
+  background: #DDD;
+}
+
+/* line 91, ../sass/tablet.scss */
+#popup-bg .box {
+  color: #333;
+}
+
+/* line 95, ../sass/tablet.scss */
+.nbVars {
+  font-size: 80%;
+  color: #AAA;
+}
+
+/* line 100, ../sass/tablet.scss */
+.selected .nbVars {
+  color: #000;
+}

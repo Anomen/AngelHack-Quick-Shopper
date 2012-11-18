@@ -1,0 +1,694 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/css3/images";
+@import "general";
+
+/********************************************************* 
+* Parameters
+********************************************************/
+$orangeColor: #ad8412;
+
+// Schneider colors
+$spruceGreen: $orangeColor;
+$ladyFernGreen: #f3bc25;
+$seedingGreen: #ecbe44;
+$darkGray: #626469;
+$lightGray: #9fa0a4;
+$sunflowerYellow: #ffd100;
+$honeysuckleOrange: #e47f00;
+$fuchsiaRed: #b10043;
+$skyBlue: #42b4e6;
+
+// Tabs
+$tabsBarHeight: 70px;
+$tabsIconsSize: 50px;
+
+// Bars
+$topBarHeight: 55px;
+$topBarIconsHeight: 40px;
+$topBarBg: #111;
+
+$bottomBarHeight: $tabsBarHeight;
+$bottomBarBg: $darkGray;
+
+// Content
+$contentBg: #444444;
+$box-margin: 15px;
+$box-padding: 15px;
+
+// Default Corner Radius
+$default-border-radius: 10px;
+
+// Default values
+$default-text-shadow-color: black;
+$default-text-shadow-blur: 5px;
+$default-text-shadow-v-offset: 0px;
+$default-text-shadow-h-offset: 0px;
+
+/********************************************************* 
+* General Tags
+********************************************************/
+body {
+    @extend .layout-vertical;
+    -webkit-user-select: none;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    //-webkit-backface-visibility: hidden; // Works?
+    color: white;
+    font-family: "MS Sans Serif", Geneva, sans-serif;
+    height: 100%;
+    background-color: $contentBg;
+}
+
+a {
+    color: $orangeColor;
+    text-decoration: none;
+}
+
+strong {
+    font-weight: bold;
+}
+
+img {
+    vertical-align: middle;
+}
+
+iframe {
+    display: none;
+}
+
+input {
+    border: 0;
+    background: transparent;
+    //border-bottom: 1px solid #AAA;
+    width: 80%;
+    height: 30px;
+    text-align: right;
+    font-size: 16px;
+}
+
+/********************************************************* 
+* PAGE ELEMENTS
+********************************************************/
+.box {
+    margin: $box-margin $box-margin 0 $box-margin;
+    &:last-child {
+        margin-bottom: $box-margin;
+    }
+    h2 {
+        color: white;
+        margin: -5px 5px 5px 5px;
+        font-size: 95%;
+        font-weight: normal;
+    }
+    .content {
+        @extend .corner-all;
+        @extend .box-shadow;
+        background-color: #eee;
+        padding: $box-padding;
+        color: $spruceGreen;
+    }
+    .text {
+        color: #333;
+    }
+    ul.list2 { 
+        margin: -$box-padding;
+    }
+}
+
+ul.list1 {
+    li {
+        @extend .layout-horizontal;
+        font-weight: bold;
+        line-height: 30px;
+        div.value {
+            @include box-flex(1);
+            font-weight: normal;
+            text-align: right;
+            color: #333;
+        }
+    }
+}
+
+ul.list2 {
+    @extend ul.list1;
+    @extend .corner-all;
+    color: $spruceGreen;
+    background: #DDD;
+    li {
+        @extend .layout-horizontal;
+        @include box-align(center);
+        @include background-image(linear-gradient(#eaeaea, white));
+        min-height: 37px;
+        margin: 1px;
+        padding: 10px $box-padding;
+        &:first-child {
+            @include border-top-radius;
+        }
+        &:last-child {
+            @include border-bottom-radius;
+        }
+    }
+}
+
+ul.menu-icons {
+    li {
+        @include box-flex(1);
+        text-align: center;
+        img {
+            width: 80px;
+        }
+    }
+}
+
+ul.tabs {
+    @extend .layout-horizontal;
+    @include box-align(center);
+    @include box-pack(center);
+    @include background-image(linear-gradient(#333333 50%, black 50%)); 
+    height: $tabsBarHeight;
+    font-size: 80%;
+    color: #aaa;
+    li {
+        width: 150px;
+        @extend .layout-vertical;
+        @include box-align(center);
+        @include box-pack(center);
+        text-align: center;
+        height: $tabsBarHeight;
+        &.selected {
+            @include background-image(linear-gradient(#555555 50%, #222222 50%));
+            color: #fff;
+        }
+    }
+}
+
+ul.vertical-tabs {
+    color: #FFF;
+    li {
+        &.selected {
+            @include background-image(linear-gradient($ladyFernGreen, $seedingGreen) !important);
+            color: #000 !important;
+        }
+    }
+}
+
+.tabs-content {
+    display: none;
+}
+
+/********************************************************* 
+* COMPONENTS
+********************************************************/
+a.button {
+    line-height: 45px;
+}
+
+a.button, button {
+    color: white;
+    padding: 10px 15px;
+    margin: 3px 10px;
+    font-size: 90%;
+    font-family: sans-serif;
+    font-weight: bold;
+    border: 0;
+    @include single-box-shadow(#222222, 0, 0, 3px);
+    @include background-image(linear-gradient(#666 50%, #333 50%));
+    @include border-radius(6px);
+}
+
+ul.button-group {
+    @extend .layout-horizontal;
+    @include box-align(center);
+    @include box-pack(center);
+    padding-left: 10px;
+    li {
+        @extend .layout-vertical;
+        @include box-flex(1);
+        text-align: center;
+        padding: 10px 10px 10px 0;
+    }
+    button {
+        @extend button;
+        @include background-image(linear-gradient($darkGray + #222222, $darkGray));
+        border: 1px solid #111;
+        font-size: 90%;
+        font-weight: normal;
+        width: 100%;
+        height: 40px;
+        margin: 0;
+    }
+    button.green {
+        @extend button;
+        @include background-image(linear-gradient($ladyFernGreen, $spruceGreen));
+    }
+}
+
+button.black {
+    @include background-image(linear-gradient(#666 50%, #444 50%));
+    color: #FFF;
+    padding: 5px 15px;
+    font-size: 80%;
+    margin: 0px;
+}
+
+button.gray {
+    @extend button.black;
+    @include background-image(linear-gradient(#EEE 50%, #DDD 50%));
+    color: #999;
+}
+
+.label {
+    @include box-flex(1);
+    color: $spruceGreen;
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+}
+
+.value {
+    color: black;
+}
+
+.description {
+    color: #333;
+    font-size: 90%;
+    font-weight: normal;
+}
+
+.blank {
+    @include box-flex(1);
+}
+
+.next-button {
+    @include box-flex(1);
+    @include background-origin(content-box);
+    background: url(../images/next.png) no-repeat right;
+    text-align: right;
+    min-width: 30px;
+}
+
+.edit-button {
+    @include box-flex(1);
+    @include background-origin(content-box);
+    background: url(../images/edit.png) no-repeat right;
+    text-align: right;
+    width: 30px;
+    height: 30px;
+}
+
+input.password-field {
+    -webkit-text-security: disc;
+}
+
+input.error {
+    color: red;
+    background: url(../images/underline.gif) bottom repeat-x;
+}
+
+.checkbox {
+    display: block;
+    width: 94px;
+    height: 27px;
+    overflow: hidden;
+    @include border-radius(5px);
+    margin: 0 0 0 auto;
+    input[type=checkbox] {
+        display: none;
+    }
+    input[type=checkbox] + label {
+        text-indent: -9999px;
+        display: block;
+        width: 150px;
+        height: 27px;
+        line-height: 27px;
+        background: transparent url(../images/sprite.png) no-repeat -56px 0;
+        -webkit-transition: background-position 0.3s ease-in-out;
+        -moz-transition: background-position 0.3s ease-in-out;
+    }
+    input[type=checkbox]:checked + label {
+        -webkit-transition: background-position 0.3s ease-in-out;
+        -moz-transition: background-position 0.3s ease-in-out;
+        background-position: -3px 0;
+    }
+}
+
+.delete-control-button {
+    display: block;
+    overflow: hidden;
+    padding-right: 10px;
+    input[type=checkbox] {
+        display: none;
+    }
+    input[type=checkbox] + label {
+        display: block;
+        height: 30px;
+        width: 30px;
+        background: transparent url(../images/deletion-control.png) no-repeat center;
+        @include rotate(0deg);
+        @include transition-property(transform);
+        @include transition-duration(0.3s);
+        @include transition-timing-function(ease-in-out);
+    }
+    input[type=checkbox]:checked + label {
+        @include rotate(90deg);
+        @include transition-property(transform);
+        @include transition-duration(0.3s);
+        @include transition-timing-function(ease-in-out);
+    }
+}
+
+.folded {
+    width: 0;
+    overflow: hidden;
+}
+
+button.delete-button {
+    @include background-image(linear-gradient(red - #222222 50%, red - #444444 50%));
+    line-height: 10px;
+}
+
+/********************************************************* 
+* HEADER
+********************************************************/
+#header-bg {
+    @extend .box-shadow;
+    @include background-image(linear-gradient(#333 50%, #222 50%)); 
+}
+
+#header, #old-header {
+    @extend .layout-vertical;
+    .content {
+        @extend .layout-horizontal;
+        @include box-align(center);
+        @include box-pack(center);
+        height: $topBarHeight;
+        z-index: 2;
+        height: $topBarHeight;
+    }
+    // Left side of the top bar
+    .left-side {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: $topBarHeight;
+        @extend .layout-horizontal;
+        @include box-align(center);
+        @include box-pack(center);
+        img.icon {
+            height: $topBarIconsHeight;
+            margin: ($topBarHeight - $topBarIconsHeight) / 2;
+        }
+    }
+    // Right side of the top bar, which is the same as the 
+    // left side, but at the right
+    .right-side {
+        @extend .left-side;
+        right: 0;
+        left: auto;
+    }
+    // Center of the bar
+    .center-side {
+        text-align: center;
+        @include box-flex(1);
+        h1 {
+            font-size: 140%;
+            @include single-text-shadow;
+        }
+    }
+}
+
+/********************************************************* 
+* FOOTER
+********************************************************/
+#footer {
+    //@extend .box-shadow;
+    height: $bottomBarHeight;
+    z-index: 2;
+    font-size: 90%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    ul.tabs {
+        @extend ul.tabs;
+        li {
+            //@include background-image(linear-gradient($ladyFernGreen 50%, $spruceGreen 50%));
+            color: #777;
+            font-weight: bold;
+            overflow: hidden;
+            text-align: center;
+            .icon {
+                background: #777;
+                width: 30px;
+                height: 30px;
+                -webkit-mask-size: 30px;
+                margin: 0 auto;
+            }
+            &.selected {
+                color: #fff;
+                .icon {
+                    background-position: 0 -50px;
+                }
+            }
+
+            .icon-locations {
+                background: url(../images/location_icon.png) no-repeat;
+                height: $tabsIconsSize;
+                width: $tabsIconsSize;
+            }
+            .icon-badges {
+                @extend .icon-locations;
+                background: url(../images/badges_icon.png) no-repeat;
+            }
+            .icon-news {
+                @extend .icon-locations;
+                background: url(../images/news_icon.png) no-repeat;
+            }
+            .icon-events {
+                @extend .icon-locations;
+                background: url(../images/events_icon.png) no-repeat;
+            }
+        }
+    }
+}
+
+/********************************************************* 
+* CONTENT
+********************************************************/
+#page-bg {
+    @include box-flex(1);
+    background: #444 url(../images/ipad_resources/badge_bg.png) no-repeat;
+    position: relative;
+    //margin-bottom:$bottomBarHeight;
+    margin-bottom: 0;
+}
+
+#page, #old-page {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: $box-margin;
+}
+
+/********************************************************* 
+* EDIT MODE
+********************************************************/
+.non-edit-only {
+    overflow: hidden;
+    position: relative !important;
+    padding: 0;
+    margin: 0;
+}
+
+.edit-only {
+    @extend .non-edit-only;
+    display: none;
+}
+
+/********************************************************* 
+* Ports Statistics bar
+********************************************************/
+.ports-bar {
+    width: 100%;
+    height: 70px;
+    background: $darkGray;
+    border: 3px solid $darkGray;
+    @extend .layout-horizontal;
+    .EIPExplicit {
+        background: $honeysuckleOrange;
+    }
+    .ModbusMess {
+        background: $seedingGreen;
+    }
+    .ModbusScan {
+        background: $sunflowerYellow;
+    }
+    .EIPScanner {
+        background: $skyBlue;
+    }
+}
+
+.ports-bar-legend {
+    font-size: 80%;
+    @include box-flex(1);
+    .EIPExplicit, .ModbusMess, .ModbusScan, .EIPScanner {
+        position: relative;
+        line-height: 20px;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        -o-text-overflow: ellipsis;
+        /* for Opera 9 */
+        text-overflow: ellipsis;
+        /* for the rest */
+    }
+    .value {
+        display: inline-block;
+    }
+    .EIPExplicit .value {
+        background: $honeysuckleOrange;
+    }
+    .ModbusMess  .value {
+        background: $seedingGreen;
+    }
+    .ModbusScan  .value {
+        background: $sunflowerYellow;
+    }
+    .EIPScanner  .value {
+        background: $skyBlue;
+    }
+}
+
+/********************************************************* 
+* Popup
+********************************************************/
+#popup-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1000;
+    //display: none;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 0 50px;
+    @extend .layout-vertical;
+    @include box-align(center);
+    @include box-pack(center);
+    h1 {
+        display: block;
+        width: 70%;
+        text-align: center;
+        line-height: 45px;
+        background: $spruceGreen;
+        @include border-top-radius;
+    }
+    .body {
+        @include border-bottom-radius;
+        width: 70%;
+        background: #FFF;
+        // Modify specific properties
+        .box {
+            margin: 0;
+            .content {
+                @include single-box-shadow(#222222, 0, 0, 0);
+            }
+        }
+        ul.list1 {
+            li {
+                &:first-child {
+                    @include border-top-radius(0);
+                }
+                &:last-child {
+                    @include border-bottom-radius(0);
+                }
+            }
+        }
+        ul.button-group {
+            width: 80%;
+            margin: 0 auto;
+            padding: 10px 0;
+        }
+    }
+}
+
+/********************************************************* 
+* Fancy list
+********************************************************/
+
+#transparent-menu {
+    z-index: 2000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: $tabsBarHeight;
+    width: 300px;
+
+    .transparent-menu-bg {
+        z-index: 3000;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background: #000;
+        @include opacity(0.6);
+    }
+
+    ul.vertical-tabs {
+        z-index: 4000;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        li {
+            min-height: 30px;
+            padding: 10px;
+        }
+    }
+}
+
+#map_canvas {
+    position: absolute;
+    top: 0;
+    bottom: $tabsBarHeight;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+/********************************************************* 
+* News list
+********************************************************/
+
+.item_title{
+	font-weight: bold;
+    color: #000;
+    font-size: 25px;
+}
+
+.item_body{
+	color: #000;
+	width: 90%;
+}
+
+.postedby{
+	font-size: 14px;
+    color: gray;
+    font-style: italic;
+}
+
+.item_date{
+	font-size: 12px;
+    color: #1f2d7d;
+}
+
+
+

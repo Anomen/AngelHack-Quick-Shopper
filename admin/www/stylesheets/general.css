@@ -1,0 +1,66 @@
+/********************************************************* 
+ * General Classes
+ ********************************************************/
+/* line 6, ../sass/general.scss */
+.corner-all {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 10, ../sass/general.scss */
+.box-shadow {
+  -webkit-box-shadow: 0 0 15px #222222;
+  -moz-box-shadow: 0 0 15px #222222;
+  box-shadow: 0 0 15px #222222;
+}
+
+/* line 14, ../sass/general.scss */
+.layout-vertical {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+  box-orient: vertical;
+}
+
+/* line 19, ../sass/general.scss */
+.layout-horizontal {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: box;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -ms-box-orient: horizontal;
+  box-orient: horizontal;
+}
+
+/* line 24, ../sass/general.scss */
+.flex1 {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -ms-box-flex: 1;
+  box-flex: 1;
+}
+
+/* line 28, ../sass/general.scss */
+.pack-center {
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-box-pack: center;
+  box-pack: center;
+}
+
+/* line 32, ../sass/general.scss */
+.align-center {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-box-align: center;
+  box-align: center;
+}
