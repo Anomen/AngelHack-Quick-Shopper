@@ -11,7 +11,8 @@ define(['text!templates/googleMapTemplate.tpl',
 			footerTemplate:_.template(footerTemplate),
 
 			events:{
-				'click .mapOfShops':"goToShopmap"
+				'click .mapOfShops':"goToShopmap",
+				'click #backButton':'goBackOnePage'
 			},
 
 			initialize:function () {
@@ -25,6 +26,7 @@ define(['text!templates/googleMapTemplate.tpl',
 				this.$el.html(this.template());
 
 				$('#backButton').show();
+				$('#backButton').attr('href', '#shoppingList');
 
 				$('#footer').html(this.footerTemplate());
 				$('.tabs #footer_addItem').hide();
@@ -34,6 +36,10 @@ define(['text!templates/googleMapTemplate.tpl',
 
 			goToShopmap:function () {
 				App.router.showMap();
+			},
+
+			goBackOnePage:function () {
+				App.router.showShoppingList();
 			}
 		});
 

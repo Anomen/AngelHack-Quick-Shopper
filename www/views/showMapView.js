@@ -9,7 +9,7 @@ define([
 		template      :_.template(showMapTemplate),
 		footerTemplate:_.template(footerTemplate),
 		
-        events : {
+        events :{
 		},
 		initialize    :function () {
 			t("inside initialize [showMapView.js]");
@@ -21,6 +21,7 @@ define([
 			this.$el.html(this.template());
 
 			$('#backButton').show();
+			$('#backButton').attr('href', '#googleMap');
 
 			$('#footer').html(this.footerTemplate());
 			$('.tabs #footer_addItem').hide();
@@ -32,9 +33,6 @@ define([
 		},
 
         hideMap: function() {
-
-            
-
         },
 
 		renderMap:function () {
