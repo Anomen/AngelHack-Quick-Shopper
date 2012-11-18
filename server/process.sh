@@ -34,7 +34,7 @@ for i in $list ; do
     if [[ $info == 'No data available for this code' ]] ; then
         info='{"error": "No data available for this code"}'
     fi
-    echo "{'barcode': $i, 'informations': $info}," >> /tmp/__productfinder/informations
+    echo "'$i': $info," >> /tmp/__productfinder/informations
 done
 echo "}" >> /tmp/__productfinder/informations
 

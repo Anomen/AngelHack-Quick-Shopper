@@ -45,6 +45,7 @@
 /home/anomen/Desktop/AngelHack/admin/android/assets/www/sass/print.scss \
 /home/anomen/Desktop/AngelHack/admin/android/assets/www/sass/ie.scss \
 /home/anomen/Desktop/AngelHack/admin/android/assets/www/sass/tablet.scss \
+/home/anomen/Desktop/AngelHack/admin/android/assets/www/templates/rowTemplate.tpl \
 /home/anomen/Desktop/AngelHack/admin/android/assets/www/templates/storeTemplate.tpl \
 /home/anomen/Desktop/AngelHack/admin/android/assets/www/stylesheets/tablet.css \
 /home/anomen/Desktop/AngelHack/admin/android/assets/www/stylesheets/print.css \
@@ -53,6 +54,7 @@
 /home/anomen/Desktop/AngelHack/admin/android/assets/www/stylesheets/screen.css \
 /home/anomen/Desktop/AngelHack/admin/android/assets/www/views/storeView.js \
 /home/anomen/Desktop/AngelHack/admin/android/assets/www/images/android_resources \
+/home/anomen/Desktop/AngelHack/admin/android/assets/www/images/ajaxloader.gif \
 /home/anomen/Desktop/AngelHack/admin/android/assets/www/images/ipad_resources \
 /home/anomen/Desktop/AngelHack/admin/android/assets/www/images/android_resources/android_bg.png \
 /home/anomen/Desktop/AngelHack/admin/android/assets/www/images/ipad_resources/badge_bg.png \
