@@ -115,7 +115,7 @@
     </p>
     <br/><br/><br/><br/>
     <div class="line"></div>
-    <p style="margin-top: 8px;">Need a EasyShopping Account?</p>
+    <p style="margin-top: 8px;">Need a Quick Shoppers Account?</p>
     <br/>
     <p>
         <a href="#">Sign up here.</a>
