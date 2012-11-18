@@ -26,9 +26,12 @@ define(['text!templates/shoppingListTemplate.tpl',
 
 				$('h1').text("Shopping List");
 
+				$('#backButton').show();
+
 				this.$el.html(this.template());
 
 				$('#footer').html(this.footerTemplate());
+				$('.tabs #footer_addItem').show();
 				$('.tabs #footer_goShopping').show();
 				$('.tabs #footer_start').hide();
 			}

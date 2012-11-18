@@ -727,22 +727,18 @@ button.delete-button, ul.button-group button.delete-button, ul.button-group butt
   background-position: 0 -50px;
 }
 /* line 457, ../sass/screen.scss */
-#footer ul.tabs li .icon-locations, #footer ul.tabs li .icon-locations, #footer ul.tabs li .icon-badges, #footer ul.tabs li .icon-badges, #footer ul.tabs li .icon-news, #footer ul.tabs li .icon-news, #footer ul.tabs li .icon-events, #footer ul.tabs li .icon-events {
-  background: url(../images/location_icon.png) no-repeat;
+#footer ul.tabs li .icon-addItem, #footer ul.tabs li .icon-addItem, #footer ul.tabs li .icon-start, #footer ul.tabs li .icon-start, #footer ul.tabs li .icon-goShopping, #footer ul.tabs li .icon-goShopping {
+  background: url(../images/addItem_icon.png) no-repeat;
   height: 50px;
   width: 50px;
 }
 /* line 462, ../sass/screen.scss */
-#footer ul.tabs li .icon-badges, #footer ul.tabs li .icon-badges {
-  background: url(../images/badges_icon.png) no-repeat;
+#footer ul.tabs li .icon-start, #footer ul.tabs li .icon-start {
+  background: url(../images/start_icon.png) no-repeat;
 }
 /* line 466, ../sass/screen.scss */
-#footer ul.tabs li .icon-news, #footer ul.tabs li .icon-news {
-  background: url(../images/news_icon.png) no-repeat;
-}
-/* line 470, ../sass/screen.scss */
-#footer ul.tabs li .icon-events, #footer ul.tabs li .icon-events {
-  background: url(../images/events_icon.png) no-repeat;
+#footer ul.tabs li .icon-goShopping, #footer ul.tabs li .icon-goShopping {
+  background: url(../images/cart_icon.png) no-repeat;
 }
 
 /********************************************************* 

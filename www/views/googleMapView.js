@@ -21,10 +21,13 @@ define(['text!templates/googleMapTemplate.tpl',
 			render:function () {
 				t("inside render [googleMapView.js]");
 
-				$('h1').text("Shops Near You");
+				$('h1').text("Shops Map");
 				this.$el.html(this.template());
 
+				$('#backButton').show();
+
 				$('#footer').html(this.footerTemplate());
+				$('.tabs #footer_addItem').hide();
 				$('.tabs #footer_goShopping').hide();
 				$('.tabs #footer_start').hide();
 			},
