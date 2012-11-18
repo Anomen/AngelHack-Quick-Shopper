@@ -40,7 +40,7 @@
         background: rgba(0,0,50,.1);
     }
     .list li{
-        line-height: 32px;
+        line-height: 30px;
 
         position: relative;
         float: left;

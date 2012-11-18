@@ -35,8 +35,6 @@ define(['text!templates/loginTemplate.tpl',
 			showListView: function () {
 				t("inside showListView [loginView.js]");
 
-				$('#logOutButton').show();
-
 				App.router.showShoppingList();
 			}
 		});

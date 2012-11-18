@@ -2,18 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e67a97e1-0df6-45eb-b4ca-add0394e30a9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/addItem_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/cart_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/start_icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/Thumbs.db" afterPath="$PROJECT_DIR$/images/Thumbs.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/addItem_icon.png" afterPath="$PROJECT_DIR$/images/addItem_icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/cart_icon.png" afterPath="$PROJECT_DIR$/images/cart_icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/start_icon.png" afterPath="$PROJECT_DIR$/images/start_icon.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/screen.scss" afterPath="$PROJECT_DIR$/sass/screen.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/screen.css" afterPath="$PROJECT_DIR$/stylesheets/screen.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/tabbarTemplate.tpl" afterPath="$PROJECT_DIR$/templates/tabbarTemplate.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/googleMapView.js" afterPath="$PROJECT_DIR$/views/googleMapView.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/loginView.js" afterPath="$PROJECT_DIR$/views/loginView.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/shoppingListView.js" afterPath="$PROJECT_DIR$/views/shoppingListView.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/showMapListView.js" afterPath="$PROJECT_DIR$/views/showMapListView.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/showMapView.js" afterPath="$PROJECT_DIR$/views/showMapView.js" />
     </list>
     <ignored path="www.iws" />
@@ -37,16 +34,16 @@
       <file leaf-file-name="router.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="35" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0">
+            <state line="5" column="44" selection-start="170" selection-end="186" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="loginView.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="loginView.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/loginView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="14" selection-start="693" selection-end="693" vertical-scroll-proportion="0.60714287">
+            <state line="25" column="40" selection-start="521" selection-end="545" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -55,7 +52,7 @@
       <file leaf-file-name="shoppingListView.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/shoppingListView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="46" selection-start="644" selection-end="644" vertical-scroll-proportion="0.0">
+            <state line="24" column="57" selection-start="608" selection-end="608" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -64,34 +61,27 @@
       <file leaf-file-name="googleMapView.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/googleMapView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="47" selection-start="582" selection-end="582" vertical-scroll-proportion="0.0">
+            <state line="28" column="60" selection-start="702" selection-end="702" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tabbarTemplate.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/tabbarTemplate.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="468" selection-end="468" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="screen.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sass/screen.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="463" column="68" selection-start="10697" selection-end="10697" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="showMapView.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="showMapView.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/showMapView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="36" selection-start="560" selection-end="584" vertical-scroll-proportion="0.0">
+            <state line="17" column="48" selection-start="484" selection-end="484" vertical-scroll-proportion="0.32254463">
+              <folding>
+                <element signature="e#945#4128#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="showMapListView.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/showMapListView.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="54" selection-start="775" selection-end="775" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -100,20 +90,11 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="61" selection-start="733" selection-end="743" vertical-scroll-proportion="-15.038462">
+            <state line="9" column="94" selection-start="578" selection-end="578" vertical-scroll-proportion="-5.8846154">
               <folding>
                 <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="screen.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/stylesheets/screen.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="743" column="59" selection-start="22249" selection-end="22249" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -131,7 +112,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/collections/googleMapCollection.js" />
         <option value="$PROJECT_DIR$/models/googleMapModel.js" />
         <option value="$PROJECT_DIR$/collections/googleMapsCollection.js" />
         <option value="$PROJECT_DIR$/templates/googleMapTemplate.tpl" />
@@ -143,10 +123,11 @@
         <option value="$PROJECT_DIR$/templates/tabbarTemplate.tpl" />
         <option value="$PROJECT_DIR$/stylesheets/screen.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/views/loginView.js" />
         <option value="$PROJECT_DIR$/views/shoppingListView.js" />
         <option value="$PROJECT_DIR$/views/googleMapView.js" />
         <option value="$PROJECT_DIR$/views/showMapView.js" />
-        <option value="$PROJECT_DIR$/views/loginView.js" />
+        <option value="$PROJECT_DIR$/views/showMapListView.js" />
       </list>
     </option>
   </component>
@@ -211,7 +192,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -224,8 +205,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="preferences.pluginManager" />
     <property name="last_opened_file_path" value="$USER_HOME$/Dropbox/hackaton/www" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -260,6 +241,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+      <changelist id="e67a97e1-0df6-45eb-b4ca-add0394e30a9" name="Default" comment="" />
       <created>1353179124608</created>
       <updated>1353179124608</updated>
     </task>
@@ -267,24 +249,24 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1860" height="1098" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3163597" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16327652" sideWeight="0.6836403" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16327652" sideWeight="0.6836403" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295838" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295838" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3163597" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -340,20 +322,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/tabbarView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="39" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="35" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sass/general.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -363,37 +331,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/ie.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/print.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/tablet.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/general.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.020089285">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/screen.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="463" column="68" selection-start="10697" selection-end="10697" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.020089285" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/screen.css">
@@ -405,21 +358,54 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/shoppingListTemplate.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="140" column="63" selection-start="3423" selection-end="3423" vertical-scroll-proportion="0.5066964">
-          <folding />
-        </state>
+        <state line="140" column="63" selection-start="3423" selection-end="3423" vertical-scroll-proportion="0.5066964" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/tabbarTemplate.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="468" selection-end="468" vertical-scroll-proportion="0.0">
+        <state line="15" column="0" selection-start="468" selection-end="468" vertical-scroll-proportion="0.2845982">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/screen.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="463" column="68" selection-start="10697" selection-end="10697" vertical-scroll-proportion="0.018973215">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="44" selection-start="170" selection-end="186" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/googleMapView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="60" selection-start="702" selection-end="702" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/loginView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="40" selection-start="521" selection-end="545" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/shoppingListView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="57" selection-start="608" selection-end="608" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="61" selection-start="733" selection-end="743" vertical-scroll-proportion="-15.038462">
+        <state line="9" column="94" selection-start="578" selection-end="578" vertical-scroll-proportion="-5.8846154">
           <folding>
             <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -427,31 +413,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/shoppingListView.js">
+    <entry file="file://$PROJECT_DIR$/views/showMapListView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="46" selection-start="644" selection-end="644" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/googleMapView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="47" selection-start="582" selection-end="582" vertical-scroll-proportion="0.0">
+        <state line="26" column="54" selection-start="775" selection-end="775" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/showMapView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="36" selection-start="560" selection-end="584" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/loginView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="14" selection-start="693" selection-end="693" vertical-scroll-proportion="0.60714287">
-          <folding />
+        <state line="17" column="48" selection-start="484" selection-end="484" vertical-scroll-proportion="0.32254463">
+          <folding>
+            <element signature="e#945#4128#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

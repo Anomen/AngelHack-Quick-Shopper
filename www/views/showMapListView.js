@@ -1,4 +1,5 @@
 define([
+
     'text!templates/showMapListTemplate.tpl',
     'text!templates/shoppingListTemplate.tpl',
     //'collections/showMapCollection',
@@ -27,6 +28,12 @@ define([
 			
 			$("h1").text("Market Basket");
             this.$el.html(this.template());
+            
+            $('#backButton').show();
+            $('#backButton').attr('href', '#showMap');
+
+            $(".tabs").hide();
+
             this.renderMapObject1();
 
 
@@ -72,7 +79,7 @@ define([
             $("#item4InList").click(function() {
                 if($("#check-4").is(':checked')) {
                     //thisInstance.renderMapObject2();
-                    alert("You are done");
+                    alert("You can checkout !");
                 } else {
                     thisInstance.renderMapObject4();
                 }
@@ -428,4 +435,5 @@ define([
     });
     
     return showMapListView;
+
 });
