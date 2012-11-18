@@ -3,18 +3,21 @@ define(['text!templates/storeTemplate.tpl', 'backbone'], function(storeTemplate)
         el: "#page",
         template: _.template(storeTemplate),
         events: {
-            'touchstart button': 'record'
+            'touchstart a': 'record'
         },
         initialize: function(){
             t("inside initialize [badgesView.js]");
+            _.bindAll(this);
         },
         uploadFile: function(mediaFile) {
+            f("inside uploadFile()");
+
             var ft = new FileTransfer(),
                 path = mediaFile.fullPath,
                 name = mediaFile.name;
 
             ft.upload(path,
-                "http://10.10.16.207",
+                "http://10.10.16.207:4001/upload",
                 function(result) {
                     console.log('Upload success: ' + result.responseCode);
                     console.log(result.bytesSent + ' bytes sent');
@@ -28,9 +31,29 @@ define(['text!templates/storeTemplate.tpl', 'backbone'], function(storeTemplate)
             );   
         },
         captureSuccess: function(mediaFiles) {
+            t("inside captureSuccess()");
+            console.log(mediaFiles);
             var i, len;
             for (i = 0, len = mediaFiles.length; i < len; i += 1) {
-                uploadFile(mediaFiles[i]);
+                console.log(mediaFiles[i]);
+                //this.uploadFile(mediaFiles[i]);
+                var ft = new FileTransfer(),
+                    path = mediaFile[i].fullPath,
+                    name = mediaFile[i].name;
+
+                ft.upload(path,
+                    "http://10.10.16.207:4001/upload",
+                    function(result) {
+                        console.log('Upload success: ' + result.responseCode);
+                        console.log(result.bytesSent + ' bytes sent');
+                    },
+                    function(error) {
+                        console.log('Error uploading file ' + path + ': ' + error.code);
+                    },
+                    { 
+                        fileName: name 
+                    }
+                );   
             }       
         },
         captureError: function(error) {
@@ -38,6 +61,7 @@ define(['text!templates/storeTemplate.tpl', 'backbone'], function(storeTemplate)
             navigator.notification.alert(msg, null, 'Uh oh!');
         },
         record: function(){
+            t("inside record()");
             navigator.device.capture.captureVideo(this.captureSuccess, this.captureError);
         },
         render: function(){

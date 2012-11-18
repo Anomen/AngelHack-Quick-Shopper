@@ -31,6 +31,6 @@
     </div>
 
     <div style="margin: 20px; text-align: center;">
-        <button>Start scanning</button>
+        <a href="#" class="button">Scan labels</a>
     </div>
 </div>
