@@ -31,6 +31,8 @@
     </div>
 
     <div style="margin: 20px; text-align: center;">
-        <a href="#" class="button">Scan labels</a>
+        Hello !<br/>Hello !<br/>
+        <div style="border:20px solid white; line-height:30px;" id="scanning">Scan</div>
+        
     </div>
 </div>

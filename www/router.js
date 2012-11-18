@@ -18,8 +18,8 @@ define(['hackathon'], function () {
 				if (typeof App.views.loginView === "undefined") {
 					App.views.loginView = new LoginView();
 				} else {
-					$("svg").hide();
-					
+					$("#mapTotal").hide();
+
 				}
 
 				App.router.navigate('#login');
