@@ -1,1 +1,0 @@
-<div style="border: 1px solid white; position: absolute; bottom: 10px; width:30px">Button</div>
