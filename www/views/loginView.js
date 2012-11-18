@@ -23,13 +23,13 @@ define(['text!templates/loginTemplate.tpl',
 				t("inside render [loginView.js]");
 
 				$('#logOutButton').hide();
+				$('#backButton').hide();
 				$('h1').text("Easy Shopping");
 
 				this.$el.html(this.template());
 
 				$('#footer').html(this.footerTemplate());
 				$('.tabs').hide();
-				$('.tabs #footer_start').hide();
 			},
 
 			showListView: function () {

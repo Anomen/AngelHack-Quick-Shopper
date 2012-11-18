@@ -35,4 +35,14 @@
         <div style="border:20px solid white; line-height:30px;" id="scanning">Scan</div>
         
     </div>
+
+    <div id="log" style="text-align: center; display: none">
+    </div>
+
+    <div class="box" style="display: none">
+        <div class="content">
+            <ul class="list2" id="result">
+            </ul>
+        </div>
+    </div>
 </div>

@@ -20,10 +20,12 @@ define([
 			$("h1").text("Market Basket");
 			this.$el.html(this.template());
 
+			$('#backButton').show();
+
 			$('#footer').html(this.footerTemplate());
+			$('.tabs #footer_addItem').hide();
 			$('.tabs #footer_goShopping').hide();
 			$('.tabs #footer_start').show();
-
 
             $('.tabs #footer_start').click(this.hideMap);
 

@@ -454,30 +454,26 @@ button.delete-button {
                 }
             }
 
-            .icon-locations {
-                background: url(../images/location_icon.png) no-repeat;
+            .icon-addItem {
+                background: url(../images/addItem_icon.png) no-repeat;
                 height: $tabsIconsSize;
                 width: $tabsIconsSize;
             }
-            .icon-badges {
-                @extend .icon-locations;
-                background: url(../images/badges_icon.png) no-repeat;
+            .icon-start {
+                @extend .icon-addItem;
+                background: url(../images/start_icon.png) no-repeat;
             }
-            .icon-news {
-                @extend .icon-locations;
-                background: url(../images/news_icon.png) no-repeat;
-            }
-            .icon-events {
-                @extend .icon-locations;
-                background: url(../images/events_icon.png) no-repeat;
+            .icon-goShopping {
+                @extend .icon-addItem;
+                background: url(../images/cart_icon.png) no-repeat;
             }
         }
     }
 }
 
-/********************************************************* 
+/*******************************************************
 * CONTENT
-********************************************************/
+*******************************************************/
 #page-bg {
     @include box-flex(1);
     background: #444;
