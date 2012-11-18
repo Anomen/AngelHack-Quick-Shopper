@@ -10,6 +10,8 @@ define(['hackathon'], function () {
 		},
 		initialize      :function () {
 			t("inside initialize [router.js]");
+
+			window.isAlertDisplayed = false;
 		},
 		login           :function () {
 			require(['views/loginView'], function (LoginView) {

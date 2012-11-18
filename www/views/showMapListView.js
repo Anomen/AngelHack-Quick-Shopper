@@ -33,6 +33,8 @@ define([
             $('#backButton').attr('href', '#showMap');
 
             $(".tabs").hide();
+            $("#footer").hide();
+
 
             this.renderMapObject1();
 
@@ -53,35 +55,60 @@ define([
             var thisInstance = this;
 
             $("#item1InList").click(function() {
+
+                $("#mapObject1").hide();
+                $("#mapObject2").hide();
+                $("#mapObject3").hide();
+                $("#mapObject4").hide();
+
+
                 if($("#check-1").is(':checked')) {
                     thisInstance.renderMapObject2();
                 } else {
+                    
+                    $("#mapObject1").html("");
+                    $("#mapObject2").html("");
+                    $("#mapObject3").html("");
+                    $("#mapObject4").html("");
                     thisInstance.renderMapObject1();
                 }
             });
 
             $("#item2InList").click(function() {
+
+                $("#mapObject1").hide();
+                $("#mapObject2").hide();
+                $("#mapObject3").hide();
+                $("#mapObject4").hide();
+
+
                 if($("#check-2").is(':checked')) {
                     thisInstance.renderMapObject3();
                 } else {
+                    $("#mapObject1").html("");
+                    $("#mapObject2").html("");
+                    $("#mapObject3").html("");
+                    $("#mapObject4").html("");
                     thisInstance.renderMapObject2();
                 }
             });
 
             $("#item3InList").click(function() {
+
+                $("#mapObject1").hide();
+                $("#mapObject2").hide();
+                $("#mapObject3").hide();
+                $("#mapObject4").hide();
+
+
                 if($("#check-3").is(':checked')) {
                     thisInstance.renderMapObject4();
                 } else {
+                    $("#mapObject1").html("");
+                    $("#mapObject2").html("");
+                    $("#mapObject3").html("");
+                    $("#mapObject4").html("");
                     thisInstance.renderMapObject3();
-                }
-            });
-
-            $("#item4InList").click(function() {
-                if($("#check-4").is(':checked')) {
-                    //thisInstance.renderMapObject2();
-                    alert("You can checkout !");
-                } else {
-                    thisInstance.renderMapObject4();
                 }
             });
 
@@ -100,6 +127,7 @@ define([
             var paperObject1 = Raphael(document.getElementById("mapObject1"), 300, 180);
             //var paperObject1 = new Raphael(10, 70, 300, 400);
             var rect = paperObject1.rect(0, 0, 300, 320).attr({fill:'fff'});
+
 
             var isle1 = paperObject1.rect(0, 40, 130, 2).attr({fill:'fff'});
 
@@ -130,6 +158,29 @@ define([
 
             var isle14 = paperObject1.rect(170, 280, 130, 2).attr({fill:'fff'});
 */
+
+            paperObject1.circle(15, 60, 9).attr({stroke:'blue'});
+            var textIsle1 = paperObject1.text(15, 60, '1').attr({fill:'blue', 'font-size': 12 });
+
+            paperObject1.circle(15, 100, 9).attr({stroke:'blue'});
+            var textIsle1 = paperObject1.text(15, 100, '2').attr({fill:'blue', 'font-size': 12 });
+
+            paperObject1.circle(15, 140, 9).attr({stroke:'blue'});
+            var textIsle1 = paperObject1.text(15, 140, '3').attr({fill:'blue', 'font-size': 12 });
+
+            paperObject1.circle(285, 60, 9).attr({stroke:'blue'});
+            var textIsle1 = paperObject1.text(285, 60, '7').attr({fill:'blue', 'font-size': 12 });
+
+            paperObject1.circle(285, 100, 9).attr({stroke:'blue'});
+            var textIsle1 = paperObject1.text(285, 100, '8').attr({fill:'blue', 'font-size': 12 });
+
+            paperObject1.circle(285, 140, 9).attr({stroke:'blue'});
+            var textIsle1 = paperObject1.text(285, 140, '9').attr({fill:'blue', 'font-size': 12 });
+
+
+
+
+
             var entrance1 = paperObject1.circle(60, 0, 25).attr({fill:'fff'});
             var entrance1Text = paperObject1.text(60, 6, 'Entrance').attr({fill:'#000' });
 
@@ -251,6 +302,27 @@ define([
             var entrance1Text2 = paperObject2.text(250, 6, 'Entrance').attr({fill:'#000' });
 
 
+            paperObject2.circle(15, 60, 9).attr({stroke:'blue'});
+            var textIsle1 = paperObject2.text(15, 60, '1').attr({fill:'blue', 'font-size': 12 });
+
+            paperObject2.circle(15, 100, 9).attr({stroke:'blue'});
+            var textIsle1 = paperObject2.text(15, 100, '2').attr({fill:'blue', 'font-size': 12 });
+
+            paperObject2.circle(15, 140, 9).attr({stroke:'blue'});
+            var textIsle1 = paperObject2.text(15, 140, '3').attr({fill:'blue', 'font-size': 12 });
+
+            paperObject2.circle(285, 60, 9).attr({stroke:'blue'});
+            var textIsle1 = paperObject2.text(285, 60, '7').attr({fill:'blue', 'font-size': 12 });
+
+            paperObject2.circle(285, 100, 9).attr({stroke:'blue'});
+            var textIsle1 = paperObject2.text(285, 100, '8').attr({fill:'blue', 'font-size': 12 });
+
+            paperObject2.circle(285, 140, 9).attr({stroke:'blue'});
+            var textIsle1 = paperObject2.text(285, 140, '9').attr({fill:'blue', 'font-size': 12 });
+
+
+
+
             var start = paperObject2.circle(80, 20, 5).attr({fill:'#fff'});
 
             var product1 = paperObject2.circle(70, 78, 5).attr({fill:'#3a9a2d'});
@@ -298,6 +370,33 @@ define([
             var isle11 = paperObject3.rect(0, 170, 130, 2).attr({fill:'fff'});
 
             var isle12 = paperObject3.rect(170, 170, 130, 2).attr({fill:'fff'});
+
+
+            paperObject3.circle(15, 30, 9).attr({stroke:'blue'});
+            var textIsle1 = paperObject3.text(15, 30, '2').attr({fill:'blue', 'font-size': 12 });
+
+            paperObject3.circle(15, 70, 9).attr({stroke:'blue'});
+            var textIsle1 = paperObject3.text(15, 70, '3').attr({fill:'blue', 'font-size': 12 });
+
+            paperObject3.circle(15, 110, 9).attr({stroke:'blue'});
+            var textIsle1 = paperObject3.text(15, 110, '4').attr({fill:'blue', 'font-size': 12 });
+
+            paperObject3.circle(15, 150, 9).attr({stroke:'blue'});
+            var textIsle1 = paperObject3.text(15, 150, '5').attr({fill:'blue', 'font-size': 12 });
+
+
+
+            paperObject3.circle(285, 30, 9).attr({stroke:'blue'});
+            var textIsle1 = paperObject3.text(285, 30, '8').attr({fill:'blue', 'font-size': 12 });
+
+            paperObject3.circle(285, 70, 9).attr({stroke:'blue'});
+            var textIsle1 = paperObject3.text(285, 70, '9').attr({fill:'blue', 'font-size': 12 });
+
+            paperObject3.circle(285, 110, 9).attr({stroke:'blue'});
+            var textIsle1 = paperObject3.text(285, 110, '10').attr({fill:'blue', 'font-size': 12 });
+
+            paperObject3.circle(285, 150, 9).attr({stroke:'blue'});
+            var textIsle1 = paperObject3.text(285, 150, '11').attr({fill:'blue', 'font-size': 12 });
 
 
             var product1 = paperObject3.circle(70, 8, 5).attr({fill:'#fff'});
@@ -373,6 +472,31 @@ define([
 
             var product4 = paperObject4.circle(280, 148, 5).attr({fill:'#3a9a2d'});
 
+
+
+            paperObject4.circle(15, 50, 9).attr({stroke:'blue'});
+            var textIsle1 = paperObject4.text(15, 50, '4').attr({fill:'blue', 'font-size': 12 });
+
+            paperObject4.circle(15, 90, 9).attr({stroke:'blue'});
+            var textIsle1 = paperObject4.text(15, 90, '5').attr({fill:'blue', 'font-size': 12 });
+
+            paperObject4.circle(15, 130, 9).attr({stroke:'blue'});
+            var textIsle1 = paperObject4.text(15, 130, '6').attr({fill:'blue', 'font-size': 12 });
+
+
+
+            paperObject4.circle(285, 50, 9).attr({stroke:'blue'});
+            var textIsle1 = paperObject4.text(285, 50, '10').attr({fill:'blue', 'font-size': 12 });
+
+            paperObject4.circle(285, 90, 9).attr({stroke:'blue'});
+            var textIsle1 = paperObject4.text(285, 90, '11').attr({fill:'blue', 'font-size': 12 });
+
+            paperObject4.circle(285, 130, 9).attr({stroke:'blue'});
+            var textIsle1 = paperObject4.text(285, 130, '12').attr({fill:'blue', 'font-size': 12 });
+
+
+
+
 /*
             var bestPathToObject1 = paperObject4.path("M84,20L150,20L150,58L70,58L70,74").attr({stroke:'red', "stroke-width":3 });
 
@@ -426,7 +550,7 @@ define([
 
              d(App.collections.eventsCollection);
              */
-        }, 
+        }
 
 
 

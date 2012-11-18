@@ -16,10 +16,11 @@
 
     .wrap-list{
     	position: absolute;
-    	top: 200px;
+    	top: 190px;
     	width: 100%;
-        height: 85%;
-        padding: 20px 0px;
+        padding: 5px 0px;
+        padding-top: 10px;
+        
         box-shadow: inset 0 0px 5px black;
         background-image: linear-gradient(transparent 97%, gray 100%);
     }
@@ -41,7 +42,6 @@
     }
     .list li{
         line-height: 30px;
-
         position: relative;
         float: left;
         width: 100%;
@@ -77,7 +77,7 @@
                     <input type="checkbox" id="check-3">
                     <label for="check-3">Sleep</label>
                 </li>
-                <li id="item4InList">
+                <li id="item4InList" onclick="if(window.isAlertDisplayed === false) {alert('You can checkout !'); window.isAlertDisplayed = true;}">
                     <input type="checkbox" id="check-4">
                     <label for="check-4">Milk</label>
                 </li>

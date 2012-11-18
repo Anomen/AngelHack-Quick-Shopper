@@ -75,6 +75,59 @@ define([
 
 			var isle14 = paper.rect(170, 280, 130, 2).attr({fill:'fff'});
 
+
+
+            paper.circle(15, 60, 9).attr({stroke:'blue'});
+            var textIsle1 = paper.text(15, 60, '1').attr({fill:'blue', 'font-size': 12 });
+            //textIsle1.transform("t0,0r-90t0,0");
+
+            paper.circle(15, 100, 9).attr({stroke:'blue'});
+            var textIsle2 = paper.text(15, 100, '2').attr({fill:'blue', 'font-size': 12 });
+            //textIsle2.transform("t0,0r-90t0,0");
+
+            paper.circle(15, 140, 9).attr({stroke:'blue'});
+            var textIsle3 = paper.text(15, 140, '3').attr({fill:'blue', 'font-size': 12 });
+            //textIsle3.transform("t0,0r-90t0,0");
+
+            paper.circle(15, 180, 9).attr({stroke:'blue'});
+            var textIsle4 = paper.text(15, 180, '4').attr({fill:'blue', 'font-size': 12 });
+            //textIsle4.transform("t0,0r-90t0,0");
+
+            paper.circle(15, 220, 9).attr({stroke:'blue'});
+            var textIsle5 = paper.text(15, 220, '5').attr({fill:'blue', 'font-size': 12 });
+            //textIsle5.transform("t0,0r-90t0,0");
+
+            paper.circle(15, 260, 9).attr({stroke:'blue'});
+            var textIsle6 = paper.text(15, 260, '6').attr({fill:'blue', 'font-size': 12 });
+            //textIsle6.transform("t0,0r-90t0,0");
+
+
+            paper.circle(285, 60, 9).attr({stroke:'blue'});
+            var textIsle7 = paper.text(285, 60, '7').attr({fill:'blue', 'font-size': 12 });
+            //textIsle7.transform("t0,0r90t0,0");
+
+            paper.circle(285, 100, 9).attr({stroke:'blue'});
+            var textIsle8 = paper.text(285, 100, '8').attr({fill:'blue', 'font-size': 12 });
+            //textIsle8.transform("t0,0r90t0,0");
+
+            paper.circle(285, 140, 9).attr({stroke:'blue'});
+            var textIsle9 = paper.text(285, 140, '9').attr({fill:'blue', 'font-size': 12 });
+            //textIsle9.transform("t0,0r90t0,0");
+
+            
+            paper.circle(285, 180, 9).attr({stroke:'blue'});
+            var textIsle10 = paper.text(285, 180, '10').attr({fill:'blue', 'font-size': 12 });
+            //textIsle10.transform("t0,0r90t0,0");
+
+            paper.circle(285, 220, 9).attr({stroke:'blue'});
+            var textIsle11 = paper.text(285, 220, '11').attr({fill:'blue', 'font-size': 12 });
+            //textIsle11.transform("t0,0r90t0,0");
+
+            paper.circle(285, 260, 9).attr({stroke:'blue'});
+            var textIsle12 = paper.text(285, 260, '12').attr({fill:'blue', 'font-size': 12 });
+            //textIsle12.transform("t0,0r90t0,0");
+
+
 			var entrance1 = paper.circle(60, 0, 25).attr({fill:'fff'});
 			var entrance1Text = paper.text(60, 6, 'Entrance').attr({fill:'#000' });
 

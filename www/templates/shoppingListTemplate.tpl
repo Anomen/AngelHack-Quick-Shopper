@@ -219,7 +219,7 @@
         <div class="wrap-list" style="background-color: white;">
             <ol class="list">
                 <li>
-                    <input type="checkbox" id="check-1" checked="checked">
+                    <input type="checkbox" id="check-1">
                     <label for="check-1">Crackers</label>
                 </li>
                 <li>
