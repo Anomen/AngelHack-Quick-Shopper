@@ -3,9 +3,9 @@ define(['hackathon'], function () {
 	var Router = Hackathon.Router.extend({
 
 		routes: {
-			''               : 'showMap',
+			''               : 'login',
 			'login'          : 'login',
-			'shoppingList'	 :'showShoppingList',
+			'shoppingList'   :'showShoppingList',
 			'showMap'        : 'showMap',
 			'showMapList'    : 'showMapList'
 		},
@@ -49,7 +49,7 @@ define(['hackathon'], function () {
 			require(['views/shoppingListView'], function (ShoppingListView) {
 				t("inside showShoppingList [router.js]");
 				if (typeof App.views.shoppingListView === "undefined") {
-					App.views.shoppingListView = new ShoppingListView;
+					App.views.shoppingListView = new ShoppingListView();
 				}
 				App.router.navigate('#shoppingList');
 				App.views.shoppingListView.render();

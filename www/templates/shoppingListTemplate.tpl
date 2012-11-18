@@ -1,10 +1,5 @@
 <div>
     <style>
-        body {
-            font-family: "Helevetica", sans-serif;
-            background: url(http://subtlepatterns.com/patterns/black-Linen.png);
-            padding: 10px;
-        }
 
         ul, li, blockquote {
             margin: 0;
@@ -13,7 +8,7 @@
 
         section {
             background: rgba(255, 255, 255, 0.05);
-            width: 500px;
+            /*width: 500px;*/
             border: 1px solid #000;
             margin: 0 auto;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -121,20 +116,7 @@
             color: #4099FF;
         }
     </style>
-
-    <script>
-        // Kill alerts, confirmations and prompts
-        // window.alert   = function(){}; allowing alerts for now
-        window.confirm = function () {
-        };
-        window.prompt = function () {
-        };
-        window.open = function () {
-        };
-        window.print = function () {
-        };
-    </script>
-    <section>
+    
         <div id="responses">
             <div id="slider">
                 <li>
@@ -146,9 +128,9 @@
             </div>
         </div>
 
-        <footer><input id="siri" x-webkit-speech/></footer>
-    </section>
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <div style="position:absolute; botton:0px;"><input id="siri" x-webkit-speech/></div>
+    
+    
 
     <script>
         (function () {
