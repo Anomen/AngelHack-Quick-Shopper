@@ -1,19 +1,11 @@
 <ul class="tabs">
-    <li data-direction="forward" class="selected" data-target-url="#locations">
-        <div class="icon icon-locations"></div>
-        Where to Volunteer
-    </li>
-    <li data-direction="forward" data-target-url="#badges">
-        <div class="icon icon-badges"></div>
-        My Badges
-    </li>
-    <li data-direction="forward" data-target-url="#news">
+    <li id="footer_goShopping" data-direction="forward" data-target-url="#googleMap">
         <div class="icon icon-news"></div>
-        What's New
+        Go Shopping
     </li>
-    <li data-target-url="#events" data-direction="forward">
+    <li id="footer_start" data-direction="forward" data-target-url="#showMapList">
         <div class="icon icon-events"></div>
-        BV Events
+        Start
     </li>
 </ul>
 

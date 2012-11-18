@@ -1,28 +1,35 @@
-define(['text!templates/shoppingListTemplate.tpl', 'collections/shoppingListsCollection', 'hackathon'], function (shoppingListTemplate, shoppingListsCollection) {
+define(['text!templates/shoppingListTemplate.tpl',
+	'text!templates/tabbarTemplate.tpl',
+	'collections/shoppingListsCollection',
+	'hackathon'],
+	function (shoppingListTemplate, footerTemplate, shoppingListsCollection) {
 
-	var ShoppingListView = Hackathon.View.extend({
+		var ShoppingListView = Hackathon.View.extend({
 
-		el:"#page",
+			el:"#page",
 
-		template:_.template(shoppingListTemplate),
+			template      :_.template(shoppingListTemplate),
+			footerTemplate:_.template(footerTemplate),
 
-		events:{
-		},
+			events:{
+			},
 
-		initialize:function () {
-			t("inside initialize [shoppingListView.js]");
+			initialize:function () {
+				t("inside initialize [shoppingListView.js]");
+			},
 
+			render:function () {
+				t("inside render [shoppingListView.js]");
 
-		},
+				$('h1').text("Shopping List");
 
-		render:function () {
-			t("inside render [shoppingListView.js]");
+				this.$el.html(this.template());
 
-			$('h1').text("Shopping List");
+				$('#footer').html(this.footerTemplate());
+				$('.tabs #footer_goShopping').show();
+				$('.tabs #footer_start').hide();
+			}
+		});
 
-			this.$el.html(this.template());
-		}
+		return ShoppingListView;
 	});
-
-	return ShoppingListView;
-});
