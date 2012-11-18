@@ -23,7 +23,7 @@ define(['text!templates/loginTemplate.tpl', 'collections/loginsCollection', 'hac
 		showListView: function() {
 			t("inside showListView [loginView.js]");
 
-			$('h1').text("Login");
+			$('h1').text("Easy Shopping");
 
 			App.router.showShoppingList();
 		}

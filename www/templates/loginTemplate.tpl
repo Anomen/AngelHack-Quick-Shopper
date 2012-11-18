@@ -49,7 +49,7 @@
     .wrapper {
         width:272px;
         margin:0 auto;
-        margin-top:5%;
+        margin-top:15%;
         height: 100%;
     }
 
@@ -113,7 +113,7 @@
 }
 
 p {
-    color: gray;
+    color: #ccc;
     font-family:Arial, Helvetica, sans-serif;
     font-size:14px;
     text-align:left;
@@ -131,14 +131,6 @@ a {
     
     width:100%;
     height:1px;
-}
-
-.pointlessfooter {
-position:absolute;
-left:0px;
-width:100%;
-height:60%;
-background:#fff;
 }
 
 .button:hover,.button:focus {
@@ -164,13 +156,13 @@ background:#fff;
 <div class="wrapper">
     <input class="field1" autocorrect="off" name="email" placeholder="Username" type="text">
     <input class="field2" autocorrect="off" name="pass" placeholder="Password" type="password">
-    <button class="button">Log in</button>
+    <button class="button" id="login">Log in</button>
 
     <br/><br/>
     <p style=""> 
         <a href="#">Forgot Password?</a>
     </p>
-    <br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/>
     <div class="line"></div>
     <p style="margin-top: 8px;">Need a EasyShopping Account?</p>
     <br/>
