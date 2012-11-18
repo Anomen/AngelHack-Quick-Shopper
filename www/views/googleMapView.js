@@ -31,8 +31,7 @@ define(['text!templates/googleMapTemplate.tpl',
 				$('#footer').html(this.footerTemplate());
 				
 				$('.tabs').hide();
-				
-				
+			
 			},
 
 			goToShopmap:function () {

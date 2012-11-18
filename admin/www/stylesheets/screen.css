@@ -1,4 +1,4 @@
-/* line 17, ../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -764,7 +764,8 @@ button.delete-button, ul.button-group button.delete-button, ul.button-group butt
   position: absolute;
   top: 0;
   bottom: 0;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
   width: 100%;
   padding-bottom: 15px;
 }
@@ -772,7 +773,7 @@ button.delete-button, ul.button-group button.delete-button, ul.button-group butt
 /********************************************************* 
 * EDIT MODE
 ********************************************************/
-/* line 501, ../sass/screen.scss */
+/* line 502, ../sass/screen.scss */
 .non-edit-only, .edit-only {
   overflow: hidden;
   position: relative !important;
@@ -780,7 +781,7 @@ button.delete-button, ul.button-group button.delete-button, ul.button-group butt
   margin: 0;
 }
 
-/* line 508, ../sass/screen.scss */
+/* line 509, ../sass/screen.scss */
 .edit-only {
   display: none;
 }
@@ -788,31 +789,31 @@ button.delete-button, ul.button-group button.delete-button, ul.button-group butt
 /********************************************************* 
 * Ports Statistics bar
 ********************************************************/
-/* line 516, ../sass/screen.scss */
+/* line 517, ../sass/screen.scss */
 .ports-bar {
   width: 100%;
   height: 70px;
   background: #626469;
   border: 3px solid #626469;
 }
-/* line 522, ../sass/screen.scss */
+/* line 523, ../sass/screen.scss */
 .ports-bar .EIPExplicit {
   background: #e47f00;
 }
-/* line 525, ../sass/screen.scss */
+/* line 526, ../sass/screen.scss */
 .ports-bar .ModbusMess {
   background: #ecbe44;
 }
-/* line 528, ../sass/screen.scss */
+/* line 529, ../sass/screen.scss */
 .ports-bar .ModbusScan {
   background: #ffd100;
 }
-/* line 531, ../sass/screen.scss */
+/* line 532, ../sass/screen.scss */
 .ports-bar .EIPScanner {
   background: #42b4e6;
 }
 
-/* line 536, ../sass/screen.scss */
+/* line 537, ../sass/screen.scss */
 .ports-bar-legend {
   font-size: 80%;
   -webkit-box-flex: 1;
@@ -820,7 +821,7 @@ button.delete-button, ul.button-group button.delete-button, ul.button-group butt
   -ms-box-flex: 1;
   box-flex: 1;
 }
-/* line 539, ../sass/screen.scss */
+/* line 540, ../sass/screen.scss */
 .ports-bar-legend .EIPExplicit, .ports-bar-legend .ModbusMess, .ports-bar-legend .ModbusScan, .ports-bar-legend .EIPScanner {
   position: relative;
   line-height: 20px;
@@ -832,23 +833,23 @@ button.delete-button, ul.button-group button.delete-button, ul.button-group butt
   text-overflow: ellipsis;
   /* for the rest */
 }
-/* line 550, ../sass/screen.scss */
+/* line 551, ../sass/screen.scss */
 .ports-bar-legend .value {
   display: inline-block;
 }
-/* line 553, ../sass/screen.scss */
+/* line 554, ../sass/screen.scss */
 .ports-bar-legend .EIPExplicit .value {
   background: #e47f00;
 }
-/* line 556, ../sass/screen.scss */
+/* line 557, ../sass/screen.scss */
 .ports-bar-legend .ModbusMess .value {
   background: #ecbe44;
 }
-/* line 559, ../sass/screen.scss */
+/* line 560, ../sass/screen.scss */
 .ports-bar-legend .ModbusScan .value {
   background: #ffd100;
 }
-/* line 562, ../sass/screen.scss */
+/* line 563, ../sass/screen.scss */
 .ports-bar-legend .EIPScanner .value {
   background: #42b4e6;
 }
@@ -856,7 +857,7 @@ button.delete-button, ul.button-group button.delete-button, ul.button-group butt
 /********************************************************* 
 * Popup
 ********************************************************/
-/* line 570, ../sass/screen.scss */
+/* line 571, ../sass/screen.scss */
 #popup-bg {
   position: absolute;
   top: 0;
@@ -875,7 +876,7 @@ button.delete-button, ul.button-group button.delete-button, ul.button-group butt
   -ms-box-pack: center;
   box-pack: center;
 }
-/* line 583, ../sass/screen.scss */
+/* line 584, ../sass/screen.scss */
 #popup-bg h1 {
   display: block;
   width: 70%;
@@ -889,7 +890,7 @@ button.delete-button, ul.button-group button.delete-button, ul.button-group butt
   -webkit-border-top-right-radius: 10px;
   border-top-right-radius: 10px;
 }
-/* line 591, ../sass/screen.scss */
+/* line 592, ../sass/screen.scss */
 #popup-bg .body {
   -moz-border-radius-bottomleft: 10px;
   -webkit-border-bottom-left-radius: 10px;
@@ -900,17 +901,17 @@ button.delete-button, ul.button-group button.delete-button, ul.button-group butt
   width: 70%;
   background: #FFF;
 }
-/* line 596, ../sass/screen.scss */
+/* line 597, ../sass/screen.scss */
 #popup-bg .body .box {
   margin: 0;
 }
-/* line 598, ../sass/screen.scss */
+/* line 599, ../sass/screen.scss */
 #popup-bg .body .box .content {
   -webkit-box-shadow: 0 0 0 #222222;
   -moz-box-shadow: 0 0 0 #222222;
   box-shadow: 0 0 0 #222222;
 }
-/* line 604, ../sass/screen.scss */
+/* line 605, ../sass/screen.scss */
 #popup-bg .body ul.list1 li:first-child, #popup-bg .body ul.list2 li:first-child {
   -moz-border-radius-topleft: 0;
   -webkit-border-top-left-radius: 0;
@@ -919,7 +920,7 @@ button.delete-button, ul.button-group button.delete-button, ul.button-group butt
   -webkit-border-top-right-radius: 0;
   border-top-right-radius: 0;
 }
-/* line 607, ../sass/screen.scss */
+/* line 608, ../sass/screen.scss */
 #popup-bg .body ul.list1 li:last-child, #popup-bg .body ul.list2 li:last-child {
   -moz-border-radius-bottomleft: 0;
   -webkit-border-bottom-left-radius: 0;
@@ -928,7 +929,7 @@ button.delete-button, ul.button-group button.delete-button, ul.button-group butt
   -webkit-border-bottom-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-/* line 612, ../sass/screen.scss */
+/* line 613, ../sass/screen.scss */
 #popup-bg .body ul.button-group {
   width: 80%;
   margin: 0 auto;
@@ -938,7 +939,7 @@ button.delete-button, ul.button-group button.delete-button, ul.button-group butt
 /********************************************************* 
 * Fancy list
 ********************************************************/
-/* line 624, ../sass/screen.scss */
+/* line 625, ../sass/screen.scss */
 #transparent-menu {
   z-index: 2000;
   position: absolute;
@@ -947,7 +948,7 @@ button.delete-button, ul.button-group button.delete-button, ul.button-group butt
   bottom: 70px;
   width: 300px;
 }
-/* line 632, ../sass/screen.scss */
+/* line 633, ../sass/screen.scss */
 #transparent-menu .transparent-menu-bg {
   z-index: 3000;
   position: absolute;
@@ -959,7 +960,7 @@ button.delete-button, ul.button-group button.delete-button, ul.button-group butt
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
 }
-/* line 643, ../sass/screen.scss */
+/* line 644, ../sass/screen.scss */
 #transparent-menu ul.vertical-tabs {
   z-index: 4000;
   position: absolute;
@@ -968,13 +969,13 @@ button.delete-button, ul.button-group button.delete-button, ul.button-group butt
   left: 0;
   right: 0;
 }
-/* line 651, ../sass/screen.scss */
+/* line 652, ../sass/screen.scss */
 #transparent-menu ul.vertical-tabs li {
   min-height: 30px;
   padding: 10px;
 }
 
-/* line 658, ../sass/screen.scss */
+/* line 659, ../sass/screen.scss */
 #map_canvas {
   position: absolute;
   top: 0;
@@ -987,27 +988,27 @@ button.delete-button, ul.button-group button.delete-button, ul.button-group butt
 /********************************************************* 
 * News list
 ********************************************************/
-/* line 671, ../sass/screen.scss */
+/* line 672, ../sass/screen.scss */
 .item_title {
   font-weight: bold;
   color: #000;
   font-size: 25px;
 }
 
-/* line 677, ../sass/screen.scss */
+/* line 678, ../sass/screen.scss */
 .item_body {
   color: #000;
   width: 90%;
 }
 
-/* line 682, ../sass/screen.scss */
+/* line 683, ../sass/screen.scss */
 .postedby {
   font-size: 14px;
   color: gray;
   font-style: italic;
 }
 
-/* line 688, ../sass/screen.scss */
+/* line 689, ../sass/screen.scss */
 .item_date {
   font-size: 12px;
   color: #1f2d7d;

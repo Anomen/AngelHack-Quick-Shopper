@@ -12,17 +12,36 @@ define(['text!templates/shoppingListTemplate.tpl',
 			footerTemplate:_.template(footerTemplate),
 
 			events:{
+				'click #addItemButton': 'addItemButton'
+
 			},
 
-			initialize:function () {
+			initialize: function() {
 				t("inside initialize [shoppingListView.js]");
 
 				App.views.tabbarView = new FooterView();
 				App.views.tabbarView.render();
 			},
 
-			render:function () {
+			addItemButton: function() {
+				t("inside addItemButton [shoppingListView.js]");
+
+				var content = 
+					'<li>' +
+                    '<input type="checkbox" id="check-4">' +
+                    '<label for="check-4">Milk</label>' +
+               		'</li>';
+
+
+				$("#itemList").append(content);
+				$("#inputBubble").hide();
+
+			},
+
+			render: function () {
 				t("inside render [shoppingListView.js]");
+
+				var thisInstance = this;
 
 				$('h1').text("Shopping List");
 
@@ -36,6 +55,16 @@ define(['text!templates/shoppingListTemplate.tpl',
 				$('.tabs #footer_addItem').show();
 				$('.tabs #footer_goShopping').show();
 				$('.tabs #footer_start').hide();
+
+				$(".tabs #footer_addItem").click(function() {
+					thisInstance.showInputBubble();
+				});
+			},
+
+			showInputBubble:function () {
+				t("inside showInputBubble [shoppingListView.js]");
+
+				$('#inputBubble').show();
 			}
 		});
 

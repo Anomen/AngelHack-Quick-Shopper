@@ -24,7 +24,7 @@ define(['text!templates/loginTemplate.tpl',
 
 				$('#logOutButton').hide();
 				$('#backButton').hide();
-				$('h1').text("Easy Shopping");
+				$('h1').text("Quick Shoppers");
 
 				this.$el.html(this.template());
 

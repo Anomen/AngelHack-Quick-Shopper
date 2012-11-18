@@ -77,8 +77,22 @@ define(['text!templates/storeTemplate.tpl', 'text!templates/rowTemplate.tpl', 'b
                         console.log(result.bytesSent + ' bytes sent');
                         console.log(JSON.stringify(result));
                         eval("var res = " + result.response);
+                        var total = 0;
                         _.each(res, function(info, bc){
-                            $("#result").append(_.template(rowTemplate)(info));
+                            if (info.info.status.code != "404") {
+                                total = total + 1;
+                            }
+                        });
+                        var num = 1;
+                        $("#result").html("");
+                        _.each(res, function(info, bc){
+                            if (info.info.status.code != "404") {
+                                $("#result").append(_.template(rowTemplate)({
+                                    info: info.info,
+                                    loc: Math.floor(100 * num / total)
+                                }));
+                                num = num + 1;
+                            }
                         });
                     },
                     function(error) {

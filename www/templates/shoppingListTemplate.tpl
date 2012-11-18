@@ -217,19 +217,24 @@
   
     
         <div class="wrap-list" style="background-color: white;">
-            <ol class="list">
+            <ol class="list" id="itemList">
                 <li>
                     <input type="checkbox" id="check-1">
-                    <label for="check-1">Crackers</label>
+                    <label for="check-1">x2 Crackers</label>
                 </li>
                 <li>
                     <input type="checkbox" id="check-2">
-                    <label for="check-2">Fresh croissants</label>
+                    <label for="check-2">x5 Fresh croissants</label>
                 </li>
                 <li>
                     <input type="checkbox" id="check-3">
-                    <label for="check-3">Sleep</label>
+                    <label for="check-3">Water</label>
                 </li>
             </ol>
+        </div>
+        <div id="inputBubble" style="background-image: url(./images/bubble.png); width: 130px; height: 80px; position: absolute; bottom: 70px; background-repeat: no-repeat; left: 60px; display:none; z-index: 9; border-radius: 5px; border: 0px solid red;">
+            
+            <input id="itemInput" value="Milk" style="background-color: white; color:black; width: 120px; z-index: 10; position: relative; left: 5px; top: 5px; line-height:30px;" readonly />
+            <input type="button" id="addItemButton" value="ADD" style="background-color: white; color:black; width: 60px; z-index: 10; position: relative; left: 35px; top: 10px; line-height:16px; margin: 0px; padding: 0px; font-size: 13px; height:26px;" />
         </div>
     

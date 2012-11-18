@@ -67,15 +67,15 @@
             <ol class="list">
                 <li id="item1InList">
                     <input type="checkbox" id="check-1"> <!-- checked="checked"-->
-                    <label for="check-1">Crackers</label>
+                    <label for="check-1">x2 Crackers</label>
                 </li>
                 <li id="item2InList">
                     <input type="checkbox" id="check-2">
-                    <label for="check-2">Fresh croissants</label>
+                    <label for="check-2">x5 Fresh croissants</label>
                 </li>
                 <li id="item3InList">
                     <input type="checkbox" id="check-3">
-                    <label for="check-3">Sleep</label>
+                    <label for="check-3">Water</label>
                 </li>
                 <li id="item4InList" onclick="if(window.isAlertDisplayed === false) {alert('You can checkout !'); window.isAlertDisplayed = true;}">
                     <input type="checkbox" id="check-4">
