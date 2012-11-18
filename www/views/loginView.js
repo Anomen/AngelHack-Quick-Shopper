@@ -28,7 +28,7 @@ define(['text!templates/loginTemplate.tpl',
 				this.$el.html(this.template());
 
 				$('#footer').html(this.footerTemplate());
-				$('.tabs #footer_goShopping').hide();
+				$('.tabs').hide();
 				$('.tabs #footer_start').hide();
 			},
 
