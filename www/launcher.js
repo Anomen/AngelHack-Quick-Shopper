@@ -1,9 +1,3 @@
-window.onload = function() {
-    document.ontouchmove = function(e) {
-        e.preventDefault();
-    }
-}
-
 function t(text) {
     console.log(text);
 }
