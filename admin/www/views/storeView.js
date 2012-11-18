@@ -8,6 +8,29 @@ define(['text!templates/storeTemplate.tpl', 'backbone'], function(storeTemplate)
         initialize: function(){
             t("inside initialize [badgesView.js]");
             _.bindAll(this);
+
+            ////////////////////////////////////////////////////
+            // to test /mnt/sdcard/DCIM/Camera/MOV025.3gp
+            /*
+            var ft = new FileTransfer(),
+                path = "/mnt/sdcard/DCIM/Camera/MOV025.3gp",
+                name = "MOV025.3gp";
+
+            ft.upload(path,
+                "http://10.10.16.207:4001/upload",
+                function(result) {
+                    console.log('Upload success: ' + result.responseCode);
+                    console.log(result.bytesSent + ' bytes sent');
+                },
+                function(error) {
+                    console.log('Error uploading file ' + path + ': ' + error.code);
+                },
+                { 
+                    fileName: name 
+                }
+            );
+            ///////////////////////////////////////////////////*/
+
         },
         uploadFile: function(mediaFile) {
             f("inside uploadFile()");
@@ -38,14 +61,15 @@ define(['text!templates/storeTemplate.tpl', 'backbone'], function(storeTemplate)
                 console.log(mediaFiles[i]);
                 //this.uploadFile(mediaFiles[i]);
                 var ft = new FileTransfer(),
-                    path = mediaFile[i].fullPath,
-                    name = mediaFile[i].name;
+                    path = mediaFiles[i].fullPath,
+                    name = mediaFiles[i].name;
 
                 ft.upload(path,
                     "http://10.10.16.207:4001/upload",
                     function(result) {
                         console.log('Upload success: ' + result.responseCode);
                         console.log(result.bytesSent + ' bytes sent');
+                        console.log(result);
                     },
                     function(error) {
                         console.log('Error uploading file ' + path + ': ' + error.code);
