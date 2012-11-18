@@ -1,33 +1,45 @@
-define(['text!templates/loginTemplate.tpl', 'collections/loginsCollection', 'hackathon'], function(loginTemplate, LoginsCollection) {
-    
-    var LoginView = Hackathon.View.extend({
-        
-        el: "#page",
+define(['text!templates/loginTemplate.tpl',
+	'text!templates/tabbarTemplate.tpl',
+	'hackathon'],
 
-        template: _.template(loginTemplate),
+	function (loginTemplate, footerTemplate) {
 
-        events: {
-			"click #login" :"showListView"
-        },
-        
-        initialize: function() {
-            t("inside initialize [loginView.js]");
-        },
+		var LoginView = Hackathon.View.extend({
 
-        render: function() {
-            t("inside render [loginView.js]");
-            
-            this.$el.html(this.template());
-        },
+			el:"#page",
 
-		showListView: function() {
-			t("inside showListView [loginView.js]");
+			template:_.template(loginTemplate),
+			footerTemplate:_.template(footerTemplate),
 
-			$('h1').text("Login");
+			events:{
+				"click .button":"showListView"
+			},
 
-			App.router.showShoppingList();
-		}
-    });
-    
-    return LoginView;
-});
+			initialize: function () {
+				t("inside initialize [loginView.js]");
+			},
+
+			render: function () {
+				t("inside render [loginView.js]");
+
+				$('#logOutButton').hide();
+				$('h1').text("Easy Shopping");
+
+				this.$el.html(this.template());
+
+				$('#footer').html(this.footerTemplate());
+				$('.tabs').hide();
+				$('.tabs #footer_start').hide();
+			},
+
+			showListView: function () {
+				t("inside showListView [loginView.js]");
+
+				$('#logOutButton').show();
+
+				App.router.showShoppingList();
+			}
+		});
+
+		return LoginView;
+	});
