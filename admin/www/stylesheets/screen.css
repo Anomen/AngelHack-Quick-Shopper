@@ -754,7 +754,7 @@ button.delete-button, ul.button-group button.delete-button, ul.button-group butt
   -moz-box-flex: 1;
   -ms-box-flex: 1;
   box-flex: 1;
-  background: #444444 url(../images/ipad_resources/badge_bg.png) no-repeat;
+  background: #444;
   position: relative;
   margin-bottom: 0;
 }
