@@ -24,6 +24,8 @@ define(['text!templates/shoppingListTemplate.tpl',
 			render:function () {
 				t("inside render [shoppingListView.js]");
 
+				var thisInstance = this;
+
 				$('h1').text("Shopping List");
 
 				$('#backButton').show();
@@ -36,6 +38,16 @@ define(['text!templates/shoppingListTemplate.tpl',
 				$('.tabs #footer_addItem').show();
 				$('.tabs #footer_goShopping').show();
 				$('.tabs #footer_start').hide();
+
+				$(".tabs #footer_addItem").click(function() {
+					thisInstance.showInputBubble();
+				});
+			},
+
+			showInputBubble:function () {
+				t("inside showInputBubble [shoppingListView.js]");
+
+				$('#inputBubble').show();
 			}
 		});
 

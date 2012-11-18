@@ -10,6 +10,8 @@ define(['hackathon'], function () {
 		},
 		initialize      :function () {
 			t("inside initialize [router.js]");
+
+			window.isAlertDisplayed = false;
 		},
 		login           :function () {
 			require(['views/loginView'], function (LoginView) {
@@ -18,8 +20,8 @@ define(['hackathon'], function () {
 				if (typeof App.views.loginView === "undefined") {
 					App.views.loginView = new LoginView();
 				} else {
-					$("svg").hide();
-					
+					$("#mapTotal").hide();
+
 				}
 
 				App.router.navigate('#login');

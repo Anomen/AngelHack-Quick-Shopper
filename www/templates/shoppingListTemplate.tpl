@@ -232,4 +232,13 @@
                 </li>
             </ol>
         </div>
+        <div id="inputBubble" style="background-image: url(./images/bubble.PNG);
+                                     width: 200px;
+                                     height: 80px;
+                                     position: absolute;
+                                     bottom: 50px;
+                                     background-repeat: no-repeat;
+                                     left: 100px; display:none;">
+            <input id="itemInput" value="Milk" style="color:white; width: 180px"/>
+        </div>
     

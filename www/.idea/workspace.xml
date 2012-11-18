@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e67a97e1-0df6-45eb-b4ca-add0394e30a9" name="Default" comment="" />
+    <list default="true" id="e67a97e1-0df6-45eb-b4ca-add0394e30a9" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/showMapListTemplate.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/Thumbs.db" afterPath="$PROJECT_DIR$/images/Thumbs.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/router.js" afterPath="$PROJECT_DIR$/router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/googleMapTemplate.tpl" afterPath="$PROJECT_DIR$/templates/googleMapTemplate.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/shoppingListTemplate.tpl" afterPath="$PROJECT_DIR$/templates/shoppingListTemplate.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/googleMapView.js" afterPath="$PROJECT_DIR$/views/googleMapView.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/shoppingListView.js" afterPath="$PROJECT_DIR$/views/shoppingListView.js" />
+    </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,19 +29,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="router.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/router.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="44" selection-start="170" selection-end="186" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="loginView.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/loginView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="34" selection-start="669" selection-end="687" vertical-scroll-proportion="0.0">
+            <state line="28" column="47" selection-start="617" selection-end="617" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -41,45 +41,25 @@
       <file leaf-file-name="shoppingListView.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/shoppingListView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="57" selection-start="608" selection-end="608" vertical-scroll-proportion="0.0">
+            <state line="54" column="7" selection-start="1243" selection-end="1243" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="googleMapView.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/googleMapView.js">
+      <file leaf-file-name="tabbarTemplate.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/tabbarTemplate.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="60" selection-start="702" selection-end="702" vertical-scroll-proportion="0.0">
+            <state line="1" column="26" selection-start="30" selection-end="44" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="googleMapTemplate.tpl" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/googleMapTemplate.tpl">
+      <file leaf-file-name="shoppingListTemplate.tpl" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/shoppingListTemplate.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="47" selection-start="53" selection-end="53" vertical-scroll-proportion="0.018973215">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="showMapView.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/showMapView.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="555" selection-end="555" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#945#4128#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="showMapListView.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/showMapListView.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="54" selection-start="775" selection-end="775" vertical-scroll-proportion="0.0">
+            <state line="234" column="61" selection-start="5865" selection-end="5865" vertical-scroll-proportion="0.7780347">
               <folding />
             </state>
           </provider>
@@ -88,7 +68,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="94" selection-start="578" selection-end="578" vertical-scroll-proportion="-5.8846154">
+            <state line="25" column="18" selection-start="1203" selection-end="1203" vertical-scroll-proportion="-16.346153">
               <folding>
                 <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -113,27 +93,25 @@
         <option value="$PROJECT_DIR$/models/googleMapModel.js" />
         <option value="$PROJECT_DIR$/collections/googleMapsCollection.js" />
         <option value="$PROJECT_DIR$/views/tabbarView.js" />
-        <option value="$PROJECT_DIR$/router.js" />
         <option value="$PROJECT_DIR$/templates/loginTemplate.tpl" />
-        <option value="$PROJECT_DIR$/templates/shoppingListTemplate.tpl" />
         <option value="$PROJECT_DIR$/sass/screen.scss" />
         <option value="$PROJECT_DIR$/templates/tabbarTemplate.tpl" />
         <option value="$PROJECT_DIR$/stylesheets/screen.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/views/loginView.js" />
-        <option value="$PROJECT_DIR$/views/shoppingListView.js" />
-        <option value="$PROJECT_DIR$/views/googleMapView.js" />
         <option value="$PROJECT_DIR$/views/showMapView.js" />
         <option value="$PROJECT_DIR$/views/showMapListView.js" />
         <option value="$PROJECT_DIR$/templates/googleMapTemplate.tpl" />
+        <option value="$PROJECT_DIR$/router.js" />
+        <option value="$PROJECT_DIR$/views/googleMapView.js" />
+        <option value="$PROJECT_DIR$/views/shoppingListView.js" />
+        <option value="$PROJECT_DIR$/templates/shoppingListTemplate.tpl" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1860" />
-    <option name="height" value="1098" />
+    <option name="width" value="1367" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -190,35 +168,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -274,13 +224,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1860" height="1098" extended-state="6" />
+    <frame x="0" y="0" width="1367" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16327652" sideWeight="0.6836403" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2239819" sideWeight="0.6836403" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295838" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -375,18 +325,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/shoppingListTemplate.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="140" column="63" selection-start="3423" selection-end="3423" vertical-scroll-proportion="0.5066964" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/tabbarTemplate.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="468" selection-end="468" vertical-scroll-proportion="0.2845982">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sass/screen.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="463" column="68" selection-start="10697" selection-end="10697" vertical-scroll-proportion="0.018973215">
@@ -394,23 +332,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/router.js">
+    <entry file="file://$PROJECT_DIR$/views/showMapView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="44" selection-start="170" selection-end="186" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="27" column="0" selection-start="716" selection-end="716" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#1015#4280#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/shoppingListView.js">
+    <entry file="file://$PROJECT_DIR$/views/showMapListView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="57" selection-start="608" selection-end="608" vertical-scroll-proportion="0.0">
+        <state line="36" column="36" selection-start="932" selection-end="932" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="94" selection-start="578" selection-end="578" vertical-scroll-proportion="-5.8846154">
+        <state line="25" column="18" selection-start="1203" selection-end="1203" vertical-scroll-proportion="-16.346153">
           <folding>
             <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -418,39 +358,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/showMapListView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="54" selection-start="775" selection-end="775" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/showMapView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="555" selection-end="555" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#945#4128#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/loginView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="34" selection-start="669" selection-end="687" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/googleMapView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="60" selection-start="702" selection-end="702" vertical-scroll-proportion="0.0">
+        <state line="31" column="24" selection-start="765" selection-end="765" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/googleMapTemplate.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="47" selection-start="53" selection-end="53" vertical-scroll-proportion="0.018973215">
+        <state line="0" column="74" selection-start="24" selection-end="74" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/tabbarTemplate.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="26" selection-start="30" selection-end="44" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/loginView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="47" selection-start="617" selection-end="617" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/shoppingListView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="7" selection-start="1243" selection-end="1243" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/shoppingListTemplate.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="234" column="61" selection-start="5865" selection-end="5865" vertical-scroll-proportion="0.7780347">
           <folding />
         </state>
       </provider>

@@ -29,9 +29,10 @@ define(['text!templates/googleMapTemplate.tpl',
 				$('#backButton').attr('href', '#shoppingList');
 
 				$('#footer').html(this.footerTemplate());
-				$('.tabs #footer_addItem').hide();
-				$('.tabs #footer_goShopping').hide();
-				$('.tabs #footer_start').hide();
+				$('.tabs').hide();
+				//$('.tabs #footer_addItem').hide();
+				//$('.tabs #footer_goShopping').hide();
+				//$('.tabs #footer_start').hide();
 			},
 
 			goToShopmap:function () {
